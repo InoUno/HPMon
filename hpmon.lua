@@ -72,7 +72,7 @@ function hpmon.formatOutput(mob)
 end
 
 function hpmon.updateDatabase(mob)
-  if not mob then
+  if not mob or mob.max < mob.min then
     return
   end
 
@@ -102,6 +102,7 @@ function hpmon.updateDatabase(mob)
 
   if updated then
     hpmon.saveDatabase(hpmon.outputDbPath, hpmon.db)
+    hpmon.exportDatabaseCsv(hpmon.outputDbPath, hpmon.db)
   end
 end
 
@@ -200,13 +201,19 @@ function hpmon.calculate(mob)
   end
 
   -- Useful debug log to add
-  -- windower.add_to_chat(7, string.format('[HPMon] Damage: %d, Start HPP: %d, HPP: %d', mob.dmgTaken, mob.startHPP, mob.hpp))
+  if hpmon.debug then
+    windower.add_to_chat(7, string.format('[HPMon] Damage: %d, Start HPP: %d, HPP: %d', mob.dmgTaken, mob.startHPP, mob.hpp))
+  end
 
   -- The range is different dependant on the mobs total HP.
   -- If it's less than 100, then the HPP is floored instead of ceiled.
   local dHPP = mob.startHPP - mob.hpp
   local min = math.ceil(mob.dmgTaken * 100 / dHPP)
   local max = math.floor(mob.dmgTaken * 100 / (dHPP - 0.99999))
+
+  if mob.min ~= nil and max < mob.min or mob.max ~= nil and min > mob.max then
+    windower.add_to_chat(7, string.format('[HPMon] Invalid calculation: Current: %d-%d, Aggregated: %d-%d', min, max, mob.min, mob.max))
+  end
 
   if min > max then -- Unexpected case happened
     windower.add_to_chat(7, string.format('[HPMon] Unexpected range: Damage: %d, Start HPP: %d, HPP: %d, Min: %d, Max: %d', mob.dmgTaken, mob.startHPP, mob.hpp, min, max))
@@ -228,7 +235,11 @@ function hpmon.calculate(mob)
   end
 
   if updated then
-    windower.add_to_chat(7, string.format('[HPMon] %s has HP range %d-%d', mob.name, mob.min, mob.max))
+    local hp = mob.min
+    if mob.min ~= mob.max then
+      hp = string.format('%d-%d', mob.min, mob.max)
+    end
+    windower.add_to_chat(7, string.format('[HPMon] %s has HP: %s', mob.name, hp))
   end
 end
 
@@ -322,7 +333,7 @@ function hpmon.handleCheckMessage(data)
       if dbMob.min ~= dbMob.max then
         hp = hp .. '-' .. dbMob.max
       end
-      windower.add_to_chat(7, string.format('[HPMon] Previously recorded HP: %s', hp))
+      windower.add_to_chat(7, string.format('[HPMon] Recorded HP: %s', hp))
     end
   end
 end
@@ -383,12 +394,14 @@ function hpmon.actionHandler(action)
 
   -- Check if it's an action we should examine
   if not hpmon.msg_types[action.category] then
-    -- Uncomment to examine skipped actions
-    -- for _, target in pairs(action.targets) do
-    --   for i, effect in pairs(target.actions) do
-    --     windower.add_to_chat(7, '[HPMon] Skipped effect ' .. action.category .. ' / ' .. effect.message .. ' with ' .. effect.param)
-    --   end
-    -- end
+    if hpmon.debug then
+      -- Debug missing effect handler
+      for _, target in pairs(action.targets) do
+        for i, effect in pairs(target.actions) do
+          windower.add_to_chat(7, '[HPMon] Skipped effect ' .. action.category .. ' / ' .. effect.message .. ' with ' .. effect.param)
+        end
+      end
+    end
     return
   end
 
@@ -403,9 +416,9 @@ function hpmon.actionHandler(action)
         if msg[2] ~= 0 then
           dmgById[target.id] = dmgById[target.id] + (effect.param * msg[2])
         end
-      else
-        -- Uncomment to examine skipped effects
-        -- windower.add_to_chat(7, '[HPMon] Skipped effect ' .. action.category .. ' / ' .. effect.message)
+      elseif hpmon.debug then
+        -- Debug missing effect handler
+        windower.add_to_chat(7, '[HPMon] Skipped effect ' .. action.category .. ' / ' .. effect.message .. ' with ' .. effect.param)
       end
     end
   end
@@ -492,6 +505,7 @@ hpmon.msg_types = {
   },
   [11] = {
     [185] = {'Trust WS', 1},
+    [238] = {'Mob Healing', -1},
   },
 }
 
@@ -568,7 +582,7 @@ function hpmon.formatValue(value)
   local formatted
   local valueType = type(value)
   if valueType == 'string' then
-    formatted = '\'' .. value .. '\''
+    formatted = '\'' .. string.gsub(value, '\'', '\\\'') .. '\''
   elseif value ~= nil then
     formatted = '' .. value
   end
@@ -580,7 +594,7 @@ function hpmon.formatKey(key)
   if type(key) == 'number' then
     key = string.format('[%d]', key)
   elseif type(key) == 'string' then
-    key = string.format('[\'%s\']', key)
+    key = string.format('[\'%s\']', string.gsub(key, '\'', '\\\''))
   end
   return key
 end
@@ -635,6 +649,20 @@ function hpmon.loadDatabase(path)
   return db
 end
 
+
+function hpmon.exportDatabaseCsv(path, db)
+  local lines = {}
+  for zone, mobs in pairs(db) do
+    for name, lvls in pairs(mobs) do
+        for lvl, hp in pairs(lvls) do
+          lines[#lines+1] = table.concat({ name, lvl, (hp.min + hp.max) / 2 }, ',')
+        end
+    end
+  end
+  local file = files.new(path .. '.csv', true)
+  file:write(table.concat(lines, '\n'))
+end
+
 hpmon.outputCsv = hpmon.fileOpen('./data/hp.csv')
 
 hpmon.outputDbPath = 'data/db'
@@ -649,4 +677,14 @@ windower.register_event('prerender', function()
   for _, mob in pairs(hpmon.mobs) do
     hpmon.calculate(mob)
   end
+end)
+
+windower.register_event('addon command', function (command, ...)
+	command = command and command:lower()
+	if command == 'export' then
+    hpmon.exportDatabaseCsv(hpmon.outputDbPath, hpmon.db)
+  elseif command == 'debug' then
+    hpmon.debug = not hpmon.debug
+    print("[HPMon] Debug is now " .. (hpmon.debug and 'ON' or 'OFF'))
+	end
 end)
