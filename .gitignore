@@ -1,1 +1,3 @@
-data
+data/*
+!data/db.lua
+!data/db.csv

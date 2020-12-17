@@ -22,7 +22,7 @@ hpmon.mobs = {}
 function hpmon.getMob(id)
   if not hpmon.mobs[id] then
     local mob = windower.ffxi.get_mob_by_id(id)
-    if mob and mob.is_npc and mob.spawn_type == 16 then
+    if mob and mob.hpp > 0 and mob.is_npc and mob.spawn_type == 16 then
       local hpp = mob.hpp ~= 0 and mob.hpp or 100
       hpmon.mobs[id] = {
         id = id,
@@ -200,16 +200,16 @@ function hpmon.calculate(mob)
     return
   end
 
-  -- Useful debug log to add
-  if hpmon.debug then
-    windower.add_to_chat(7, string.format('[HPMon] Damage: %d, Start HPP: %d, HPP: %d', mob.dmgTaken, mob.startHPP, mob.hpp))
-  end
-
   -- The range is different dependant on the mobs total HP.
   -- If it's less than 100, then the HPP is floored instead of ceiled.
   local dHPP = mob.startHPP - mob.hpp
   local min = math.ceil(mob.dmgTaken * 100 / dHPP)
   local max = math.floor(mob.dmgTaken * 100 / (dHPP - 0.99999))
+
+  -- Useful debug log to add
+  if hpmon.debug then
+    windower.add_to_chat(7, string.format('[HPMon] Damage: %d, Start HPP: %d, HPP: %d, Min: %d, Max: %d', mob.dmgTaken, mob.startHPP, mob.hpp, min, max))
+  end
 
   if mob.min ~= nil and max < mob.min or mob.max ~= nil and min > mob.max then
     windower.add_to_chat(7, string.format('[HPMon] Invalid calculation: Current: %d-%d, Aggregated: %d-%d', min, max, mob.min, mob.max))
@@ -249,7 +249,7 @@ end
 -----------------
 function hpmon.setLevel(id, level)
   local mob = hpmon.getMob(id)
-  if mob.level == nil then
+  if mob ~= nil and mob.level == nil then
     mob.level = level
   end
 end
@@ -327,8 +327,8 @@ function hpmon.handleCheckMessage(data)
     hpmon.setLevel(mob.id, level)
     windower.add_to_chat(7, string.format('[HPMon] %s (%d) is level %s', mob.name, mob.id, level))
 
-    if hpmon.db[mob.zone] and hpmon.db[mob.zone][mob.name] and hpmon.db[mob.zone][mob.name][mob.level] then
-      local dbMob = hpmon.db[mob.zone][mob.name][mob.level]
+    if hpmon.db[mob.zone] and hpmon.db[mob.zone][mob.name] and hpmon.db[mob.zone][mob.name][level] then
+      local dbMob = hpmon.db[mob.zone][mob.name][level]
       local hp = dbMob.min .. ''
       if dbMob.min ~= dbMob.max then
         hp = hp .. '-' .. dbMob.max
@@ -655,11 +655,12 @@ function hpmon.exportDatabaseCsv(path, db)
   for zone, mobs in pairs(db) do
     for name, lvls in pairs(mobs) do
         for lvl, hp in pairs(lvls) do
-          lines[#lines+1] = table.concat({ name, lvl, (hp.min + hp.max) / 2 }, ',')
+          lines[#lines+1] = table.concat({ name, lvl, (hp.min + hp.max) / 2, hp.min, hp.max }, ',')
         end
     end
   end
   local file = files.new(path .. '.csv', true)
+  table.sort(lines)
   file:write(table.concat(lines, '\n'))
 end
 
