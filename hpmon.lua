@@ -60,7 +60,7 @@ end
 function hpmon.formatOutput(mob)
   local lvl = ''
   if mob.level and mob.level ~= 0 then
-    lvl = string.format(' (lvl %s)', mob.level)
+    lvl = string.format(' (lvl %s)', mob.level or '?')
   end
 
   local hp = mob.min
@@ -68,7 +68,7 @@ function hpmon.formatOutput(mob)
     hp = string.format('%d-%d', mob.min, mob.max)
   end
 
-  return string.format('[%d] %s%s: %s HP', mob.id, mob.name, lvl, hp)
+  return string.format('[%d] %s%s: %s HP', mob.id, mob.name, lvl, hp or 'unknown')
 end
 
 function hpmon.updateDatabase(mob)
@@ -179,11 +179,11 @@ end
 
 function hpmon.calculate(mob)
   -- Clean up dead mob
-  if mob.dead and os.clock() - mob.lastChange >= 0.5 then
+  if mob.dead and os.clock() - mob.lastChange >= 2 then
     local output = hpmon.formatOutput(mob)
     windower.add_to_chat(7, '[HPMon] ' .. output)
 
-    hpmon.fileAppend(hpmon.outputCsv, string.format('%d,%d,%s,%d,%d,%d\n', mob.zone, mob.id, mob.name, mob.level, mob.min, mob.max))
+    hpmon.fileAppend(hpmon.outputCsv, string.format('%d,%d,%s,%s,%d,%d\n', mob.zone, mob.id, mob.name, mob.level or '?', mob.min, mob.max))
     hpmon.updateDatabase(mob)
     hpmon.mobs[mob.id] = nil
     return
@@ -324,7 +324,7 @@ function hpmon.handleCheckMessage(data)
 
   if windowerMob then
     local mob = hpmon.getMob(windowerMob.id)
-    hpmon.setLevel(mob.id, level)
+    hpmon.setLevel(mob.id, level or '?')
     windower.add_to_chat(7, string.format('[HPMon] %s (%d) is level %s', mob.name, mob.id, level))
 
     if hpmon.db[mob.zone] and hpmon.db[mob.zone][mob.name] and hpmon.db[mob.zone][mob.name][level] then
@@ -378,7 +378,7 @@ function hpmon.handleWidescan(data)
   if not mob then
     return
   end
-  hpmon.setLevel(mob.id, packet['Level'])
+  hpmon.setLevel(mob.id, packet['Level'] or '?')
 end
 
 --------------------
@@ -507,6 +507,9 @@ hpmon.msg_types = {
     [185] = {'Trust WS', 1},
     [238] = {'Mob Healing', -1},
   },
+  [13] = {
+    [317] = {'Bloodpact: Rage', 1},
+  }
 }
 
 hpmon.add_effect_types = {

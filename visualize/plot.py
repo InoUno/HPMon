@@ -12,16 +12,21 @@ families = dict()
 families['Snipper'] = 'Crab'
 families['Clipper'] = 'Crab'
 families['Bigclaw'] = 'Crab'
+families['Thickshell'] = 'Crab'
 
 families['Sylvestre'] = 'Mandragora'
 families['Pygmaioi'] = 'Mandragora'
 families['Death Jacket'] = 'Bee'
 families['Makara'] = 'Pugil'
 families['Akbaba'] = 'Bird'
-families['Raven'] = 'Bird'
 families['Carrion Crow'] = 'Bird'
-families['Sand Hare'] = 'Rabbit'
+families['Raven'] = 'Bird'
+families['Screamer'] = 'Bird'
+families['Marsh Murre'] = 'Bird'
+families['Vulture'] = 'Bird'
 families['Zu'] = 'Bird'
+families['Broo'] = 'Sheep'
+
 
 
 familiesRegex = dict()
@@ -29,8 +34,10 @@ familiesRegex['Crawler'] = 'Crawler'
 familiesRegex['Crab'] = 'Crab'
 familiesRegex['Beetle'] = 'Beetle'
 familiesRegex['Bee'] = 'Bee'
+familiesRegex['Wasp'] = 'Bee'
 familiesRegex['Dhalmel'] = 'Dhalmel'
 familiesRegex['Rarab'] = 'Rabbit'
+familiesRegex['Hare'] = 'Rabbit'
 familiesRegex['Leech'] = 'Leech'
 familiesRegex['Mandragora'] = 'Mandragora'
 familiesRegex['Pugil'] = 'Pugil'
@@ -38,8 +45,11 @@ familiesRegex['Lizard'] = 'Lizard'
 familiesRegex['Sapling'] = 'Sapling'
 familiesRegex['Spider'] = 'Spider'
 familiesRegex['Sheep'] = 'Sheep'
+familiesRegex['Karakul'] = 'Sheep'
 familiesRegex['Worm'] = 'Worm'
+familiesRegex['Tiger'] = 'Tiger'
 familiesRegex[r'\w+fly'] = 'Fly'
+
 
 def familyMatcher(name):
     if name in families:
@@ -50,6 +60,19 @@ def familyMatcher(name):
             return familiesRegex[needle]
 
 
+filterRegex = {
+    'Goblin\s',
+    'Gigas\s',
+    'Orcish',
+    'Yagudo',
+    'Quadav',
+}
+
+def filterMatcher(name):
+    for needle in filterRegex:
+        if re.search(needle, name):
+            return True
+    return False
 
 ##########################################
 ## Read data and group it               ##
@@ -65,10 +88,15 @@ groups = dict()
 with open('./data/db.csv','r') as csvfile:
     plots = csv.reader(csvfile, delimiter=',')
     for row in plots:
+        if row[1] == '?':
+            continue
         toMatch = row[0]
         family = familyMatcher(row[0])
         if family:
             toMatch = family
+
+        if filterMatcher(toMatch):
+            continue
 
         if not toMatch in groups:
             marker_colors[toMatch] = [ rng.randint(256)/256.0, rng.randint(256)/256.0, rng.randint(256)/256.0 ]
