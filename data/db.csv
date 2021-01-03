@@ -47,6 +47,7 @@ Carrion Crow,116,5,99,99,99
 Charging Sheep,147,28,698,698,698
 Charging Sheep,147,29,735,735,735
 Charging Sheep,147,30,803.5,803,804
+Chelicerata,51,?,10241,10239,10243
 Chigoe,79,65,349,341,357
 Clipper,126,28,666.5,666,667
 Clipper,126,29,703.5,703,704
@@ -54,6 +55,8 @@ Coastal Sahagin,176,67,3686.5,3683,3690
 Crawler,116,4,79,79,79
 Crawler,116,5,99,99,99
 Crawler,116,6,113,113,113
+Cwn Annwn,5,59,3342,3330,3354
+Cwn Annwn,5,62,3584.5,3582,3587
 Damselfly,103,20,414,414,414
 Damselfly,103,21,443,443,443
 Damselfly,103,22,472.5,472,473
@@ -85,6 +88,9 @@ Eft,4,34,1223.5,1223,1224
 Eft,4,35,1305.5,1305,1306
 Elder Quadav,147,43,1865,1865,1865
 Emerald Quadav,147,48,1915.5,1915,1916
+Esbat,5,59,3333.5,3333,3334
+Esbat,5,60,3413.5,3410,3417
+Esbat,5,61,3500.5,3500,3501
 Forest Tiger,104,24,536,536,536
 Forest Tiger,104,25,569,569,569
 Giant Bee,116,7,128,128,128
@@ -104,6 +110,8 @@ Gigas Warwolf,25,41,1713,1713,1713
 Gigas Warwolf,25,43,1874.5,1873,1876
 Gigas's Sheep,25,34,366,366,366
 Gigas's Sheep,25,35,391,391,391
+Gigas's Tiger,111,33,319,318,320
+Gigas's Tiger,111,35,366,365,367
 Goblin Ambusher,102,12,179,179,179
 Goblin Ambusher,103,17,279,279,279
 Goblin Ambusher,103,18,302,302,302
@@ -175,6 +183,11 @@ Killer Bee,117,11,198,198,198
 Land Worm,126,26,504,504,504
 Land Worm,126,27,534.5,534,535
 Leaping Lizzy,107,?,297.5,297,298
+Lesser Colibri,51,64,3445.5,3445,3446
+Lesser Colibri,51,65,3525.5,3523,3528
+Lesser Colibri,52,63,3369,3367,3371
+Lesser Colibri,52,64,3447,3443,3451
+Lesser Colibri,52,65,3525.5,3522,3529
 Mad Sheep,102,11,198,198,198
 Mad Sheep,102,12,218,218,218
 Mad Sheep,102,13,239,239,239
@@ -262,6 +275,8 @@ Rock Eater,102,11,149,149,149
 Rock Lizard,107,5,99,99,99
 Rock Lizard,107,6,112.5,112,113
 Rock Lizard,107,8,144,144,144
+Sabertooth Tiger,105,31,902,902,902
+Sabertooth Tiger,105,32,984,984,984
 Sabertooth Tiger,2,29,834.5,833,836
 Sabertooth Tiger,2,30,905.5,905,906
 Sabertooth Tiger,2,31,974,974,974
@@ -287,6 +302,9 @@ Shore Sahagin,176,62,3861.5,3858,3865
 Shrieker,2,30,905,905,905
 Shrieker,2,31,974,974,974
 Slumbering Samwell,102,?,521,521,521
+Smilodon,84,46,2159,2159,2159
+Smilodon,84,47,2242,2242,2242
+Smilodon,84,48,2325,2325,2325
 Snipper,103,18,341,340,342
 Snipper,103,19,367,367,367
 Snipper,103,20,394,394,394
@@ -326,9 +344,27 @@ Thickshell,102,14,247,247,247
 Thread Leech,103,23,503.5,503,504
 Thread Leech,103,24,536,536,536
 Tococo,107,?,161,161,161
+Tundra Tiger,111,34,1145,1145,1145
+Tundra Tiger,111,35,1223,1223,1223
+Tundra Tiger,111,36,1305,1305,1305
+Tundra Tiger,111,37,1384,1383,1385
+Uleguerand Tiger,5,61,3500.5,3500,3501
+Uleguerand Tiger,5,62,3582.5,3582,3583
+Uleguerand Tiger,5,63,3667,3667,3667
+Variable Hare,5,58,3249.5,3249,3250
+Variable Hare,5,59,3334.5,3332,3337
+Variable Hare,5,60,3417.5,3416,3419
+Variable Hare,5,61,3500.5,3500,3501
 Vulture,107,5,99,99,99
 Vulture,107,7,128,128,128
+Wajaom Tiger,51,67,4000.5,4000,4001
+Wajaom Tiger,51,68,4083,4081,4085
+Wajaom Tiger,52,67,4001,4000,4002
+Wajaom Tiger,52,68,4084,4084,4084
 Walking Sapling,107,5,99,99,99
+War Smilodon,82,57,3165.5,3165,3166
+War Smilodon,82,58,3249,3249,3249
+War Smilodon,82,59,3333,3333,3333
 Wild Dhalmel,117,15,284,284,284
 Wild Karakul,79,68,4084.5,4084,4085
 Wild Karakul,79,69,4168.5,4168,4169

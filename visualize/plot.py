@@ -38,6 +38,7 @@ familiesRegex['Wasp'] = 'Bee'
 familiesRegex['Dhalmel'] = 'Dhalmel'
 familiesRegex['Rarab'] = 'Rabbit'
 familiesRegex['Hare'] = 'Rabbit'
+familiesRegex['Bunny'] = 'Rabbit'
 familiesRegex['Leech'] = 'Leech'
 familiesRegex['Mandragora'] = 'Mandragora'
 familiesRegex['Pugil'] = 'Pugil'
@@ -48,6 +49,7 @@ familiesRegex['Sheep'] = 'Sheep'
 familiesRegex['Karakul'] = 'Sheep'
 familiesRegex['Worm'] = 'Worm'
 familiesRegex['Tiger'] = 'Tiger'
+familiesRegex['Smilodon'] = 'Tiger'
 familiesRegex[r'\w+fly'] = 'Fly'
 
 
@@ -66,6 +68,7 @@ filterRegex = {
     'Orcish',
     'Yagudo',
     'Quadav',
+    'Sahagin',
 }
 
 def filterMatcher(name):
