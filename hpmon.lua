@@ -658,13 +658,13 @@ function hpmon.exportDatabaseCsv(path, db)
   for zone, mobs in pairs(db) do
     for name, lvls in pairs(mobs) do
         for lvl, hp in pairs(lvls) do
-          lines[#lines+1] = table.concat({ name, lvl, (hp.min + hp.max) / 2, hp.min, hp.max }, ',')
+          lines[#lines+1] = table.concat({ name, zone, lvl, (hp.min + hp.max) / 2, hp.min, hp.max }, ',')
         end
     end
   end
   local file = files.new(path .. '.csv', true)
   table.sort(lines)
-  file:write(table.concat(lines, '\n'))
+  file:write('Name,Zone,Level,Min,Max,Mid\n' .. table.concat(lines, '\n'))
 end
 
 hpmon.outputCsv = hpmon.fileOpen('./data/hp.csv')

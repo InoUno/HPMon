@@ -86,12 +86,12 @@ marker_colors[unmatched] = [ 0, 0, 0 ]
 
 groups = dict()
 with open('./data/db.csv','r') as csvfile:
-    plots = csv.reader(csvfile, delimiter=',')
+    plots = csv.DictReader(csvfile, delimiter=',')
     for row in plots:
-        if row[1] == '?':
+        if row['Level'] == '?':
             continue
-        toMatch = row[0]
-        family = familyMatcher(row[0])
+        toMatch = row['Name']
+        family = familyMatcher(toMatch)
         if family:
             toMatch = family
 
@@ -105,9 +105,9 @@ with open('./data/db.csv','r') as csvfile:
             groups[toMatch][1] = []
             groups[toMatch][2] = []
 
-        groups[toMatch][0].append(int(row[1]))
-        groups[toMatch][1].append(float(row[2]))
-        groups[toMatch][2].append(row[0])
+        groups[toMatch][0].append(int(row['Level']))
+        groups[toMatch][1].append(float(row['Mid']))
+        groups[toMatch][2].append(row['Name'])
 
 
 fig, ax = plt.subplots()
