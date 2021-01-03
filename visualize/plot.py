@@ -13,6 +13,7 @@ families['Snipper'] = 'Crab'
 families['Clipper'] = 'Crab'
 families['Bigclaw'] = 'Crab'
 families['Thickshell'] = 'Crab'
+families['Ironshell'] = 'Crab'
 
 families['Sylvestre'] = 'Mandragora'
 families['Pygmaioi'] = 'Mandragora'
@@ -51,6 +52,8 @@ familiesRegex['Worm'] = 'Worm'
 familiesRegex['Tiger'] = 'Tiger'
 familiesRegex['Smilodon'] = 'Tiger'
 familiesRegex[r'\w+fly'] = 'Fly'
+familiesRegex[r'\w+bat'] = 'Bat'
+familiesRegex['Bat'] = 'Bat'
 
 
 def familyMatcher(name):
