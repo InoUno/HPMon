@@ -3,6 +3,9 @@ Akbaba,102,11,198,198,198
 Akbaba,102,12,218,218,218
 Akbaba,117,11,198,198,198
 Akbaba,117,12,218,218,218
+Battue Bats,192,1,33,33,33
+Battue Bats,192,2,46,46,46
+Battue Bats,192,3,62,62,62
 Beach Bunny,113,63,3665,3667,3666
 Beach Bunny,113,64,3743,3753,3748
 Beach Pugil,103,23,520,522,521
@@ -151,11 +154,16 @@ Goblin Smithy,123,36,1303,1305,1304
 Goblin Smithy,123,37,1383,1384,1383.5
 Goblin Thug,116,5,87,87,87
 Goblin Thug,117,8,126,126,126
+Goblin Thug,192,1,29,29,29
+Goblin Thug,192,2,40,40,40
+Goblin Thug,192,3,54,54,54
+Goblin Thug,192,4,69,69,69
 Goblin Tinkerer,118,17,316,318,317
 Goblin Tinkerer,118,18,335,344,339.5
 Goblin Tinkerer,118,20,393,395,394
 Goblin Weaver,116,6,99,99,99
 Goblin Weaver,117,9,141,141,141
+Goblin Weaver,192,3,54,54,54
 Goblin's Rarab,4,29,249,249,249
 Greater Pugil,126,28,698,698,698
 Greater Pugil,126,29,735,735,735
