@@ -20,6 +20,9 @@ Bigclaw,25,45,2068,2069,2068.5
 Bigclaw,25,46,2150,2150,2150
 Bigclaw,25,47,2230,2232,2231
 Bigclaw,25,48,2312,2315,2313.5
+Blade Bat,192,4,79,79,79
+Blade Bat,192,5,99,99,99
+Blade Bat,192,6,113,113,113
 Brass Quadav,147,22,443,443,443
 Brass Quadav,147,23,471,474,472.5
 Brass Quadav,147,25,531,531,531
@@ -158,12 +161,17 @@ Goblin Thug,192,1,29,29,29
 Goblin Thug,192,2,40,40,40
 Goblin Thug,192,3,54,54,54
 Goblin Thug,192,4,69,69,69
+Goblin Thug,192,5,87,87,87
+Goblin Thug,192,6,99,99,99
 Goblin Tinkerer,118,17,316,318,317
 Goblin Tinkerer,118,18,335,344,339.5
 Goblin Tinkerer,118,20,393,395,394
 Goblin Weaver,116,6,99,99,99
 Goblin Weaver,117,9,141,141,141
 Goblin Weaver,192,3,54,54,54
+Goblin Weaver,192,4,69,69,69
+Goblin Weaver,192,5,87,87,87
+Goblin Weaver,192,6,99,99,99
 Goblin's Rarab,4,29,249,249,249
 Greater Pugil,126,28,698,698,698
 Greater Pugil,126,29,735,735,735
@@ -199,6 +207,8 @@ Lesser Colibri,52,65,3522,3529,3525.5
 Mad Sheep,102,11,198,198,198
 Mad Sheep,102,12,218,218,218
 Mad Sheep,102,13,239,239,239
+Magicked Bones,192,6,84,84,84
+Magicked Bones,192,7,95,95,95
 Makara,123,35,1222,1223,1222.5
 Makara,123,37,1382,1383,1382.5
 Makara,123,38,1466,1466,1466
