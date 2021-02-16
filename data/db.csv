@@ -56,6 +56,10 @@ Carnivorous Crawler,118,23,504,504,504
 Carrion Crow,116,3,62,62,62
 Carrion Crow,116,4,79,79,79
 Carrion Crow,116,5,99,99,99
+Carrion Worm,100,2,33,33,33
+Carrion Worm,100,3,45,45,45
+Carrion Worm,100,4,58,58,58
+Carrion Worm,100,5,74,74,74
 Charging Sheep,147,28,698,698,698
 Charging Sheep,147,29,735,735,735
 Charging Sheep,147,30,803,804,803.5
@@ -90,6 +94,9 @@ Desert Dhalmel,125,46,2157,2159,2158
 Desert Dhalmel,125,47,2238,2242,2240
 Desert Dhalmel,125,48,2325,2325,2325
 Devil Manta,176,66,3917,3932,3924.5
+Ding Bats,100,2,46,46,46
+Ding Bats,100,4,79,79,79
+Ding Bats,100,5,99,99,99
 Dire Bat,176,64,3748,3752,3750
 Diving Beetle,2,27,710,710,710
 Diving Beetle,2,28,748,749,748.5
@@ -108,6 +115,13 @@ Fomor Ninja,27,44,1927,1929,1928
 Fomor's Wyvern,27,37,690,690,690
 Fomor's Wyvern,27,38,709,714,711.5
 Fomor's Wyvern,27,39,727,731,729
+Forest Funguar,100,4,79,79,79
+Forest Funguar,100,5,99,99,99
+Forest Funguar,100,6,113,113,113
+Forest Hare,100,2,46,46,46
+Forest Hare,100,3,62,62,62
+Forest Hare,100,4,79,79,79
+Forest Hare,100,5,99,99,99
 Forest Tiger,104,24,536,536,536
 Forest Tiger,104,25,569,569,569
 Giant Bee,116,7,128,128,128
@@ -177,6 +191,7 @@ Goblin Thug,100,6,99,99,99
 Goblin Thug,100,7,112,112,112
 Goblin Thug,102,10,157,157,157
 Goblin Thug,102,9,141,141,141
+Goblin Thug,100,4,69,69,69
 Goblin Thug,116,5,87,87,87
 Goblin Thug,117,8,126,126,126
 Goblin Thug,192,1,29,29,29
@@ -262,6 +277,9 @@ Mighty Rarab,118,15,283,284,283.5
 Mighty Rarab,118,16,308,308,308
 Mighty Rarab,118,17,333,333,333
 Mighty Rarab,118,18,359,361,360
+Mouse Bat,100,4,79,79,79
+Mouse Bat,100,5,99,99,99
+Mouse Bat,100,6,113,113,113
 Mousse,176,65,3834,3834,3834
 Myxomycete,121,44,1998,1998,1998
 Myxomycete,121,45,2076,2076,2076
@@ -269,10 +287,20 @@ Ogrefly,121,41,1748,1749,1748.5
 Ogrefly,121,43,1915,1915,1915
 Ogrefly,121,44,1997,1998,1997.5
 Orcish Bowshooter,25,44,1983,1985,1984
+Orcish Fodder,100,3,62,62,62
+Orcish Fodder,100,4,79,79,79
+Orcish Fodder,100,5,99,99,99
+Orcish Fodder,100,6,113,113,113
 Orcish Fodder,102,10,179,179,179
 Orcish Footsoldier,25,43,2167,2169,2168
 Orcish Gladiator,25,43,2337,2338,2337.5
+Orcish Grappler,100,3,67,67,67
+Orcish Grappler,100,4,82,86,84
+Orcish Grappler,100,6,121,121,121
+Orcish Grappler,100,7,137,137,137
 Orcish Grappler,102,9,172,172,172
+Orcish Mesmerizer,100,5,74,74,74
+Orcish Mesmerizer,100,6,84,84,84
 Orcish Mesmerizer,102,9,120,120,120
 Orcish Neckchopper,104,17,316,316,316
 Orcish Stonelauncher,25,43,1969,1970,1969.5
@@ -340,7 +368,10 @@ Savanna Rarab,116,2,46,46,46
 Savanna Rarab,116,3,62,62,62
 Savanna Rarab,116,4,79,79,79
 Savanna Rarab,116,5,99,99,99
+Scarab Beetle,100,4,75,75,75
+Scarab Beetle,100,5,94,94,94
 Scarab Beetle,100,6,107,107,107
+Scarab Beetle,100,7,121,121,121
 Scavenger Crab,169,60,3295,3299,3297
 Scavenger Crab,169,61,3377,3379,3378
 Screamer,104,18,359,359,359
@@ -397,6 +428,7 @@ Tundra Tiger,111,34,1145,1145,1145
 Tundra Tiger,111,35,1223,1223,1223
 Tundra Tiger,111,36,1305,1305,1305
 Tundra Tiger,111,37,1383,1385,1384
+Tunnel Worm,100,1,24,24,24
 Uleguerand Tiger,5,61,3500,3501,3500.5
 Uleguerand Tiger,5,62,3582,3583,3582.5
 Uleguerand Tiger,5,63,3667,3667,3667
@@ -418,6 +450,7 @@ Wild Dhalmel,117,15,284,284,284
 Wild Karakul,79,68,4084,4085,4084.5
 Wild Karakul,79,69,4168,4169,4168.5
 Wild Karakul,79,70,4311,4311,4311
+Wild Rabbit,100,1,33,33,33
 Wild Sheep,100,5,99,99,99
 Wild Sheep,100,6,113,113,113
 Wild Sheep,100,7,128,128,128
