@@ -1,3 +1,4 @@
 data/*
 !data/db.lua
 !data/db.csv
+__pycache__

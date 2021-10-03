@@ -19,10 +19,18 @@ hpmon.mobs = {}
 -- Misc
 -----------------
 
+function hpmon.getDbStats(mob)
+  if mob and mob.level and hpmon.db[mob.zone] and hpmon.db[mob.zone][mob.name] and hpmon.db[mob.zone][mob.name][mob.level] then
+    return hpmon.db[mob.zone][mob.name][mob.level]
+  end
+  return {}
+end
+
 function hpmon.getMob(id)
   if not hpmon.mobs[id] then
     local mob = windower.ffxi.get_mob_by_id(id)
     if mob and mob.hpp > 0 and mob.is_npc and mob.spawn_type == 16 then
+      local dbMob = hpmon.getDbStats(mob)
       local hpp = mob.hpp ~= 0 and mob.hpp or 100
       hpmon.mobs[id] = {
         id = id,
@@ -38,8 +46,8 @@ function hpmon.getMob(id)
         lastChange = 0,
 
         log = {},
-        min = nil,
-        max = nil,
+        min = dbMob.min,
+        max = dbMob.max,
       }
     end
   end
@@ -48,7 +56,7 @@ function hpmon.getMob(id)
 end
 
 function hpmon.ensureLevel(mob)
-  if mob.level == nil and not mob.didWidescan then
+  if (mob.level == nil or mob.level == '?') and not mob.didWidescan then
     -- Widescan to get level
     mob.didWidescan = true
     windower.add_to_chat(7, '[HPMon] Widescanning to get level')
@@ -76,6 +84,9 @@ function hpmon.updateDatabase(mob)
     return
   end
 
+  -- Ensure latest file DB is loaded before updating it
+  hpmon.db = hpmon.loadDatabase(hpmon.outputDbPath)
+
   if not hpmon.db[mob.zone] then
     hpmon.db[mob.zone] = {}
   end
@@ -89,14 +100,14 @@ function hpmon.updateDatabase(mob)
   end
 
   local updated = false
-  local dbMob = hpmon.db[mob.zone][mob.name][mob.level]
-  if dbMob.min == nil or dbMob.min < mob.min then
-    dbMob.min = mob.min
+  local dbStats = hpmon.getDbStats(mob)
+  if dbStats.min == nil or dbStats.min < mob.min then
+    dbStats.min = mob.min
     updated = true
   end
 
-  if dbMob.max == nil or dbMob.max > mob.max then
-    dbMob.max = mob.max
+  if dbStats.max == nil or dbStats.max > mob.max then
+    dbStats.max = mob.max
     updated = true
   end
 
@@ -183,8 +194,11 @@ function hpmon.calculate(mob)
     local output = hpmon.formatOutput(mob)
     windower.add_to_chat(7, '[HPMon] ' .. output)
 
-    hpmon.fileAppend(hpmon.outputCsv, string.format('%d,%d,%s,%s,%d,%d\n', mob.zone, mob.id, mob.name, mob.level or '?', mob.min, mob.max))
-    hpmon.updateDatabase(mob)
+    if mob.min and mob.max then
+      hpmon.fileAppend(hpmon.outputCsv, string.format('%d,%d,%s,%s,%d,%d\n', mob.zone, mob.id, mob.name, mob.level or '?', mob.min, mob.max))
+      hpmon.updateDatabase(mob)
+    end
+
     hpmon.mobs[mob.id] = nil
     return
   end
@@ -249,7 +263,7 @@ end
 -----------------
 function hpmon.setLevel(id, level)
   local mob = hpmon.getMob(id)
-  if mob ~= nil and mob.level == nil then
+  if mob ~= nil and (mob.level == nil or mob.level == '?') then
     mob.level = level
   end
 end
@@ -310,34 +324,48 @@ function hpmon.handleCheckMessage(data)
 
 
   if message == 0xF9 then
-    level = '?' -- Impossible to gauge
 
   elseif checkResult == nil or stats == nil then
     -- Was not a check message
     return false
   end
 
-  -- all 1 bits return value if level is 1, for some reason
+  -- Adjust underflow
   if level == 4294967295 then
-    level = 1
+    level = -1
   end
 
   if windowerMob then
     local mob = hpmon.getMob(windowerMob.id)
-    hpmon.setLevel(mob.id, level or '?')
-    windower.add_to_chat(7, string.format('[HPMon] %s (%d) is level %s', mob.name, mob.id, level))
-
-    if hpmon.db[mob.zone] and hpmon.db[mob.zone][mob.name] and hpmon.db[mob.zone][mob.name][level] then
-      local dbMob = hpmon.db[mob.zone][mob.name][level]
-      local hp = dbMob.min .. ''
-      if dbMob.min ~= dbMob.max then
-        hp = hp .. '-' .. dbMob.max
-      end
-      windower.add_to_chat(7, string.format('[HPMon] Recorded HP: %s', hp))
+    if message == 0xF9 and level == 0 then
+      mob.requestRecordedHP = true
+      windower.add_to_chat(7, string.format('[HPMon] %s (%d) is impossible to gauge.', mob.name, mob.id))
+      hpmon.ensureLevel(mob)
+    else
+      hpmon.setLevel(mob.id, level)
+      windower.add_to_chat(7, string.format('[HPMon] %s (%d) is level %s', mob.name, mob.id, level))
+      hpmon.printRecordedHP(mob)
     end
   end
 end
 
+
+function hpmon.printRecordedHP(mob)
+  mob.requestRecordedHP = false
+
+  if not mob or not mob.level or mob.level == '?' then
+    return
+  end
+
+  if hpmon.db[mob.zone] and hpmon.db[mob.zone][mob.name] and hpmon.db[mob.zone][mob.name][mob.level] then
+    local dbMob = hpmon.db[mob.zone][mob.name][mob.level]
+    local hp = dbMob.min .. ''
+    if dbMob.min ~= dbMob.max then
+      hp = hp .. '-' .. dbMob.max
+    end
+    windower.add_to_chat(7, string.format('[HPMon] Recorded HP: %s', hp))
+  end
+end
 
 --------------------
 -- NPC update
@@ -374,11 +402,20 @@ end
 
 function hpmon.handleWidescan(data)
   local packet = packets.parse('incoming', data)
-  local mob = windower.ffxi.get_mob_by_index(packet['Index'])
+  local windowerMob = windower.ffxi.get_mob_by_index(packet['Index'])
+  if not windowerMob then
+    return
+  end
+  local mob = hpmon.getMob(windowerMob.id)
   if not mob then
     return
   end
-  hpmon.setLevel(mob.id, packet['Level'] or '?')
+
+  hpmon.setLevel(mob.id, packet['Level'])
+  if mob.requestRecordedHP then
+    windower.add_to_chat(7, string.format('[HPMon] %s (%d) is level %s', mob.name, mob.id, packet['Level']))
+    hpmon.printRecordedHP(mob)
+  end
 end
 
 --------------------
@@ -397,7 +434,7 @@ function hpmon.actionHandler(action)
     if hpmon.debug then
       -- Debug missing effect handler
       for _, target in pairs(action.targets) do
-        for i, effect in pairs(target.actions) do
+        for _, effect in pairs(target.actions) do
           windower.add_to_chat(7, '[HPMon] Skipped effect ' .. action.category .. ' / ' .. effect.message .. ' with ' .. effect.param)
         end
       end
@@ -602,24 +639,24 @@ function hpmon.formatKey(key)
   return key
 end
 
-function hpmon.formatLine(content, level)
-  return string.format('%s%s', string.rep(' ', level * 2), content)
+function hpmon.formatLine(content, indent)
+  return string.format('%s%s', string.rep(' ', indent * 2), content)
 end
 
-function hpmon.formatDatabaseEntry(key, entry, lines, level)
-  local lineStart = hpmon.formatLine(string.format('%s = ', hpmon.formatKey(key)), level)
+function hpmon.formatDatabaseEntry(key, entry, lines, indent)
+  local lineStart = hpmon.formatLine(string.format('%s = ', hpmon.formatKey(key)), indent)
   if type(entry) ~= 'table' then
     lines[#lines+1] = lineStart ..  hpmon.formatValue(entry) .. ','
   else
     lines[#lines+1] = lineStart .. '{'
-    hpmon.formatDatabaseTable(entry, lines, level)
-    lines[#lines+1] = hpmon.formatLine('},', level)
+    hpmon.formatDatabaseTable(entry, lines, indent)
+    lines[#lines+1] = hpmon.formatLine('},', indent)
   end
 end
 
-function hpmon.formatDatabaseTable(dbTable, lines, level)
-  if level == nil then
-    level = 0
+function hpmon.formatDatabaseTable(dbTable, lines, indent)
+  if indent == nil then
+    indent = 0
   end
 
   local keys = {}
@@ -629,7 +666,7 @@ function hpmon.formatDatabaseTable(dbTable, lines, level)
   table.sort(keys)
 
   for _, key in ipairs(keys) do
-    hpmon.formatDatabaseEntry(key, dbTable[key], lines, level+1)
+    hpmon.formatDatabaseEntry(key, dbTable[key], lines, indent+1)
   end
 end
 
@@ -680,6 +717,16 @@ windower.register_event('incoming chunk', hpmon.chunkHandler)
 windower.register_event('prerender', function()
   for _, mob in pairs(hpmon.mobs) do
     hpmon.calculate(mob)
+    -- local dbStats = hpmon.getDbStats(mob)
+    -- local status = dbStats.min == nil and '?'
+    -- if dbStats.min == nil then
+    --   status = '[-]'
+    -- elseif dbStats.min ~= dbStats.max then
+    --   status = '[~]'
+    -- else
+    --   status = '[✓]'
+    -- end
+    -- windower.set_mob_name(mob.id, string.format("%s%s", status, mob.name))
   end
 end)
 

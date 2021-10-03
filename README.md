@@ -23,5 +23,5 @@ pip install matplotlib
 3. Run plot from the root of the repository:
 
 ```
-python visualize/plot.py
+python tools/plot.py
 ```
