@@ -56,9 +56,9 @@ function hpmon.getMob(id)
 end
 
 function hpmon.ensureLevel(mob)
-  if (mob.level == nil or mob.level == '?') and not mob.didWidescan then
+  if (mob.level == nil or mob.level == '?') and not mob.requestedWidescan then
     -- Widescan to get level
-    mob.didWidescan = true
+    mob.requestedWidescan = true
     windower.add_to_chat(7, '[HPMon] Widescanning to get level')
     packets.inject(packets.new('outgoing', 0xF4, {['Flags'] = 1}))
   end
@@ -263,7 +263,7 @@ end
 -----------------
 function hpmon.setLevel(id, level)
   local mob = hpmon.getMob(id)
-  if mob ~= nil and (mob.level == nil or mob.level == '?') then
+  if mob ~= nil and (mob.level == nil or level ~= '?') then
     mob.level = level
   end
 end
@@ -389,7 +389,7 @@ end
 function hpmon.handleDefeatMessage(data)
   local packet = packets.parse('incoming', data)
 
-  if packet['Message'] == 6 then -- Mob defeated
+  if packet['Message'] == 6 or packet['Message'] == 20 then -- Mob defeated or falls to the ground
     hpmon.handleDeath(packet['Target'])
   end
 end
@@ -412,6 +412,7 @@ function hpmon.handleWidescan(data)
   end
 
   hpmon.setLevel(mob.id, packet['Level'])
+  mob.requestedWidescan = false
   if mob.requestRecordedHP then
     windower.add_to_chat(7, string.format('[HPMon] %s (%d) is level %s', mob.name, mob.id, packet['Level']))
     hpmon.printRecordedHP(mob)
