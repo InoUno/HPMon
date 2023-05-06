@@ -101,12 +101,12 @@ function hpmon.updateDatabase(mob)
 
   local updated = false
   local dbStats = hpmon.getDbStats(mob)
-  if dbStats.min == nil or dbStats.min < mob.min then
+  if dbStats.min == nil or (dbStats.min < mob.min and mob.min <= dbStats.max) then
     dbStats.min = mob.min
     updated = true
   end
 
-  if dbStats.max == nil or dbStats.max > mob.max then
+  if dbStats.max == nil or (dbStats.max > mob.max and mob.max >= dbStats.min) then
     dbStats.max = mob.max
     updated = true
   end
@@ -254,6 +254,11 @@ function hpmon.calculate(mob)
       hp = string.format('%d-%d', mob.min, mob.max)
     end
     windower.add_to_chat(7, string.format('[HPMon] %s has HP: %s', mob.name, hp))
+
+    if mob.min == mob.max and mob.min > 0 then
+      hpmon.fileAppend(hpmon.outputCsv, string.format('%d,%d,%s,%s,%d,%d\n', mob.zone, mob.id, mob.name, mob.level or '?', mob.min, mob.max))
+      hpmon.updateDatabase(mob)
+    end
   end
 end
 
@@ -339,8 +344,13 @@ function hpmon.handleCheckMessage(data)
     local mob = hpmon.getMob(windowerMob.id)
     if message == 0xF9 and level == 0 then
       mob.requestRecordedHP = true
-      windower.add_to_chat(7, string.format('[HPMon] %s (%d) is impossible to gauge.', mob.name, mob.id))
-      hpmon.ensureLevel(mob)
+      if mob.level then
+        windower.add_to_chat(7, string.format('[HPMon] %s (%d) is impossible to gauge (level %s).', mob.name, mob.id, mob.level))
+        hpmon.printRecordedHP(mob)
+      else
+        windower.add_to_chat(7, string.format('[HPMon] %s (%d) is impossible to gauge.', mob.name, mob.id))
+        hpmon.ensureLevel(mob)
+      end
     else
       hpmon.setLevel(mob.id, level)
       windower.add_to_chat(7, string.format('[HPMon] %s (%d) is level %s', mob.name, mob.id, level))
