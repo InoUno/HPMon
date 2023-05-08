@@ -25,6 +25,9 @@ with open('./data/db.csv','r') as csvfile:
         family = group_matcher(to_match)
         if family:
             to_match = family
+        else:
+            print(f"Skipping un-grouped: {to_match}")
+            continue
 
         if filter_matcher(to_match):
             continue
