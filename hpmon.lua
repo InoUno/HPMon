@@ -1,6 +1,8 @@
 chat = require('chat')
 files = require('files')
 packets = require('packets')
+socket = require('socket')
+texts = require('texts')
 
 _addon = _addon or {}
 _addon.name = 'HPMon'
@@ -14,6 +16,7 @@ _addon.command = 'hpmon'
 hpmon = hpmon or {}
 
 hpmon.mobs = {}
+hpmon.nextWs = 0
 
 -----------------
 -- Misc
@@ -44,6 +47,8 @@ function hpmon.getMob(id)
         changes = {},
         pending = {},
         lastChange = 0,
+        invalidCalcs = 0,
+        compoundedInvalidCalcs = 0,
 
         log = {},
         min = dbMob.min,
@@ -55,12 +60,18 @@ function hpmon.getMob(id)
   return hpmon.mobs[id]
 end
 
+function hpmon.requestWidescan()
+  packets.inject(packets.new('outgoing', 0xF4, {['Flags'] = 1}))
+end
+
 function hpmon.ensureLevel(mob)
   if (mob.level == nil or mob.level == '?') and not mob.requestedWidescan then
     -- Widescan to get level
     mob.requestedWidescan = true
-    windower.add_to_chat(7, '[HPMon] Widescanning to get level')
-    packets.inject(packets.new('outgoing', 0xF4, {['Flags'] = 1}))
+    if hpmon.debug then
+      windower.add_to_chat(7, '[HPMon] Widescanning to get level')
+    end
+    hpmon.requestWidescan()
   end
 end
 
@@ -132,7 +143,7 @@ function hpmon.registerDamage(id, dmg)
     return
   end
 
-  local time = os.clock()
+  local time = socket.gettime()
   hpmon.ensureLevel(mob)
 
   local change = { dmg = dmg, time = time }
@@ -140,13 +151,14 @@ function hpmon.registerDamage(id, dmg)
   table.insert(mob.pending, change)
 
   mob.lastChange = time
+  mob.hadDmg = true
   mob.dmgTaken = mob.dmgTaken + dmg
 end
 
 
 -- Register a HPP change
 function hpmon.registerHPP(id, hpp)
-  if hpp == 0 then
+  if hpp == 0 or hpp == 100 then
     return
   end
 
@@ -162,11 +174,12 @@ function hpmon.registerHPP(id, hpp)
 
   hpmon.ensureLevel(mob)
 
-  local time = os.clock()
+  local time = socket.gettime()
   local change = { deltaHPP = deltaHPP, time = time }
   table.insert(mob.changes, change)
   table.insert(mob.pending, change)
   mob.lastChange = time
+  mob.hadHpp = true
   mob.hpp = hpp
 end
 
@@ -179,7 +192,7 @@ function hpmon.handleDeath(mobId)
     return
   end
 
-  mob.lastChange = os.clock()
+  mob.lastChange = socket.gettime()
   mob.dead = true
 end
 
@@ -189,14 +202,18 @@ end
 
 
 function hpmon.calculate(mob)
+  local sinceLastChange = socket.gettime() - mob.lastChange
+
   -- Clean up dead mob
-  if mob.dead and os.clock() - mob.lastChange >= 2 then
+  if mob.dead and sinceLastChange >= 2 then
     local output = hpmon.formatOutput(mob)
     windower.add_to_chat(7, '[HPMon] ' .. output)
 
-    if mob.min and mob.max then
+    if mob.min and mob.max and mob.compoundedInvalidCalcs < 3 then
       hpmon.fileAppend(hpmon.outputCsv, string.format('%d,%d,%s,%s,%d,%d\n', mob.zone, mob.id, mob.name, mob.level or '?', mob.min, mob.max))
       hpmon.updateDatabase(mob)
+    else
+      windower.add_to_chat(7, '[HPMon] Was not saved because of invalid data')
     end
 
     hpmon.mobs[mob.id] = nil
@@ -204,9 +221,15 @@ function hpmon.calculate(mob)
   end
 
    -- Check if there are changes, and that more than a certain amount of time has passed
-  if #mob.pending < 2 or os.clock() - mob.lastChange < 0.5 or mob.hpp == 0 then
+  if #mob.pending == 0
+    or mob.hpp == 0
+    or (not (mob.hadDmg and mob.hadHpp) and not (mob.hadDmg and sinceLastChange > 1))
+    or (mob.dmgTaken and mob.max and mob.dmgTaken >= mob.max) -- Death not registered yet
+  then
     return
   end
+  mob.hadDmg = false
+  mob.hadHpp = false
   mob.pending = {}
 
   if mob.hpp == 1 then
@@ -214,9 +237,13 @@ function hpmon.calculate(mob)
     return
   end
 
-  -- The range is different dependant on the mobs total HP.
-  -- If it's less than 100, then the HPP is floored instead of ceiled.
   local dHPP = mob.startHPP - mob.hpp
+  if dHPP == 0 then
+    return
+  end
+
+  -- The range is different dependent on the mobs total HP.
+  -- If it's less than 100, then the HPP is floored instead of ceiled.
   local min = math.ceil(mob.dmgTaken * 100 / dHPP)
   local max = math.floor(mob.dmgTaken * 100 / (dHPP - 0.99999))
 
@@ -226,7 +253,17 @@ function hpmon.calculate(mob)
   end
 
   if mob.min ~= nil and max < mob.min or mob.max ~= nil and min > mob.max then
-    windower.add_to_chat(7, string.format('[HPMon] Invalid calculation: Current: %d-%d, Aggregated: %d-%d', min, max, mob.min, mob.max))
+    mob.invalidCalcs = mob.invalidCalcs + 1
+    if mob.invalidCalcs > 1 then
+      mob.compoundedInvalidCalcs = mob.compoundedInvalidCalcs + 1
+      windower.add_to_chat(7, string.format('[HPMon] Invalid calculation: Current: %d-%d, Aggregated: %d-%d', min, max, mob.min, mob.max))
+    end
+    return
+  elseif mob.invalidCalcs > 0 then
+    if mob.invalidCalcs > 1 then
+      windower.add_to_chat(7, '[HPMon] Recovered from invalid calculation')
+    end
+    mob.invalidCalcs = 0
   end
 
   if min > max then -- Unexpected case happened
@@ -255,7 +292,7 @@ function hpmon.calculate(mob)
     end
     windower.add_to_chat(7, string.format('[HPMon] %s has HP: %s', mob.name, hp))
 
-    if mob.min == mob.max and mob.min > 0 then
+    if mob.min == mob.max and mob.min > 0 and mob.compoundedInvalidCalcs < 3 then
       hpmon.fileAppend(hpmon.outputCsv, string.format('%d,%d,%s,%s,%d,%d\n', mob.zone, mob.id, mob.name, mob.level or '?', mob.min, mob.max))
       hpmon.updateDatabase(mob)
     end
@@ -720,6 +757,91 @@ hpmon.outputCsv = hpmon.fileOpen('./data/hp.csv')
 hpmon.outputDbPath = 'data/db'
 hpmon.db = hpmon.loadDatabase(hpmon.outputDbPath)
 
+
+-----------------------
+-- InfoBox
+-----------------------
+hpmon.defaults = {}
+hpmon.defaults.infobox = T{
+  pos = T{
+    x = windower.get_windower_settings().x_res * 1/9,
+    y = windower.get_windower_settings().y_res * 23/30,
+  },
+  padding = 4,
+  text = {
+    size  = 12,
+    font  = 'Consolas',
+    alpha = 255,
+    red   = 255,
+    green = 255,
+    blue  = 255,
+  },
+  bg = {
+    red   = 30,
+    green = 30,
+    blue  = 60,
+    alpha = 180,
+  },
+}
+
+local lines = {
+  "Mob: ${name} (${level})",
+  "Recorded HP:  ${recordedHP}",
+  "Current HP:   ${currentHP}"
+}
+hpmon.infobox = texts.new(table.concat(lines, '\n'), hpmon.defaults.infobox)
+
+function hpmon.updateInfoBox()
+
+  local currentTarget = windower.ffxi.get_mob_by_target('st') or windower.ffxi.get_mob_by_target('t')
+  if hpmon.currentTargetId and not currentTarget then
+    hpmon.currentTargetId = nil
+  elseif currentTarget and hpmon.currentTargetId ~= currentTarget.id then
+    hpmon.currentTargetId = currentTarget.id
+  end
+
+  if not hpmon.currentTargetId then
+    hpmon.infobox:hide()
+    return
+  end
+
+  local mob = hpmon.getMob(hpmon.currentTargetId)
+  if mob then
+    hpmon.ensureLevel(mob)
+    hpmon.infobox.name = mob.name
+    hpmon.infobox.level = mob.level or "?"
+
+    local currentHp = mob.min
+    if not currentHp then
+      currentHp = "none"
+    elseif mob.min ~= mob.max then
+      currentHp = string.format('%d-%d', mob.min, mob.max)
+    end
+    hpmon.infobox.currentHP = currentHp
+
+    local dbMob = hpmon.getDbStats(mob)
+    local recordedHP = dbMob.min
+    if not recordedHP then
+      recordedHP = "none"
+      if mob.level then
+        texts.bg_color(hpmon.infobox, 80, 80, 0)
+      else
+        texts.bg_color(hpmon.infobox, 80, 80, 80)
+      end
+    elseif dbMob.min ~= dbMob.max then
+      recordedHP = string.format('%d-%d', dbMob.min, dbMob.max)
+      texts.bg_color(hpmon.infobox, 30, 30, 60)
+    else
+      texts.bg_color(hpmon.infobox, 0, 100, 0)
+    end
+    hpmon.infobox.recordedHP = recordedHP
+
+    hpmon.infobox:show()
+  else
+    hpmon.infobox:hide()
+  end
+end
+
 -----------------------
 -- Register handlers
 -----------------------
@@ -728,16 +850,31 @@ windower.register_event('incoming chunk', hpmon.chunkHandler)
 windower.register_event('prerender', function()
   for _, mob in pairs(hpmon.mobs) do
     hpmon.calculate(mob)
-    -- local dbStats = hpmon.getDbStats(mob)
-    -- local status = dbStats.min == nil and '?'
-    -- if dbStats.min == nil then
-    --   status = '[-]'
-    -- elseif dbStats.min ~= dbStats.max then
-    --   status = '[~]'
-    -- else
-    --   status = '[✓]'
-    -- end
-    -- windower.set_mob_name(mob.id, string.format("%s%s", status, mob.name))
+
+  end
+
+  hpmon.updateInfoBox()
+
+  -- if hpmon.editNames then
+  --   for _, mob in pairs(hpmon.mobs) do
+  --     local dbStats = hpmon.getDbStats(mob)
+  --     local status = dbStats.min == nil and '?'
+  --     if dbStats.min == nil then
+  --       status = '-'
+  --     elseif dbStats.min ~= dbStats.max then
+  --       status = '+'
+  --     else
+  --       status = nil
+  --     end
+  --     if status then
+  --       windower.set_mob_name(mob.id, string.format("%s%s", status, mob.name))
+  --     end
+  --   end
+  -- end
+
+  local time = socket.gettime()
+  if time > hpmon.nextWs then
+    hpmon.requestWidescan()
   end
 end)
 
@@ -748,5 +885,8 @@ windower.register_event('addon command', function (command, ...)
   elseif command == 'debug' then
     hpmon.debug = not hpmon.debug
     print("[HPMon] Debug is now " .. (hpmon.debug and 'ON' or 'OFF'))
+  elseif command == 'names' then
+    -- hpmon.editNames = not hpmon.editNames
+    -- print("[HPMon] Names is now " .. (hpmon.editNames and 'ON' or 'OFF'))
 	end
 end)
