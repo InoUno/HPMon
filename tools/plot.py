@@ -16,6 +16,7 @@ marker_colors = dict()
 marker_colors[unmatched] = [ 0, 0, 0 ]
 
 groups = dict()
+skipped = set()
 with open('./data/db.csv','r') as csvfile:
     plots = csv.DictReader(csvfile, delimiter=',')
     for row in plots:
@@ -26,7 +27,9 @@ with open('./data/db.csv','r') as csvfile:
         if family:
             to_match = family
         else:
-            print(f"Skipping un-grouped: {to_match}")
+            if not to_match in skipped:
+                print(f"Skipping un-grouped: {to_match}")
+                skipped.add(to_match)
             continue
 
         if filter_matcher(to_match):
