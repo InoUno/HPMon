@@ -232,11 +232,6 @@ function hpmon.calculate(mob)
   mob.hadHpp = false
   mob.pending = {}
 
-  if mob.hpp == 1 then
-    -- Can't rely on 1% HP for calculations since the range is not a whole number (range is 0.001-1.999%)
-    return
-  end
-
   local dHPP = mob.startHPP - mob.hpp
   if dHPP == 0 then
     return
@@ -250,6 +245,21 @@ function hpmon.calculate(mob)
   -- Useful debug log to add
   if hpmon.debug then
     windower.add_to_chat(7, string.format('[HPMon] Damage: %d, Start HPP: %d, HPP: %d, Min: %d, Max: %d', mob.dmgTaken, mob.startHPP, mob.hpp, min, max))
+  end
+
+  if mob.hpp == 1 then
+    -- Can't rely on 1% HP for calculations since the range is not a whole number (range is 0.001-1.999%)
+    -- except for the total damage taken compared to current aggregated minimum
+    if mob.min and mob.dmgTaken >= mob.min then
+      mob.min = mob.dmgTaken + 1
+
+      local hp = mob.min
+      if mob.min ~= mob.max then
+        hp = string.format('%d-%d', mob.min, mob.max)
+      end
+      windower.add_to_chat(7, string.format('[HPMon] %s has HP (below 1%%): %s', mob.name, hp))
+    end
+    return
   end
 
   if mob.min ~= nil and max < mob.min or mob.max ~= nil and min > mob.max then
@@ -787,7 +797,8 @@ hpmon.defaults.infobox = T{
 local lines = {
   "Mob: ${name} (${level})",
   "Recorded HP:  ${recordedHP}",
-  "Current HP:   ${currentHP}"
+  "Current HP:   ${currentHP}",
+  "Damage taken: ${dmgTaken}",
 }
 hpmon.infobox = texts.new(table.concat(lines, '\n'), hpmon.defaults.infobox)
 
@@ -810,6 +821,7 @@ function hpmon.updateInfoBox()
     hpmon.ensureLevel(mob)
     hpmon.infobox.name = mob.name
     hpmon.infobox.level = mob.level or "?"
+    hpmon.infobox.dmgTaken = mob.dmgTaken or 0
 
     local currentHp = mob.min
     if not currentHp then
@@ -872,10 +884,10 @@ windower.register_event('prerender', function()
   --   end
   -- end
 
-  local time = socket.gettime()
-  if time > hpmon.nextWs then
-    hpmon.requestWidescan()
-  end
+  -- local time = socket.gettime()
+  -- if time > hpmon.nextWs then
+  --   hpmon.requestWidescan()
+  -- end
 end)
 
 windower.register_event('addon command', function (command, ...)
