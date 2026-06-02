@@ -7,7 +7,7 @@ texts = require('texts')
 _addon = _addon or {}
 _addon.name = 'HPMon'
 _addon.author = 'InoUno'
-_addon.version = '1.0.0'
+_addon.version = '1.1.0'
 _addon.command = 'hpmon'
 
 -- Inspired by:
@@ -23,9 +23,21 @@ hpmon.nextWs = 0
 -----------------
 
 function hpmon.getDbStats(mob)
-  if mob and mob.level and hpmon.db[mob.zone] and hpmon.db[mob.zone][mob.name] and hpmon.db[mob.zone][mob.name][mob.level] then
-    return hpmon.db[mob.zone][mob.name][mob.level]
+  if mob then
+    return hpmon.getDbStatsByValues(mob.zone, mob.name, mob.level)
   end
+  return {}
+end
+
+function hpmon.getDbStatsByValues(zone, name, level)
+  if not zone or not name or not level then
+    return {}
+  end
+
+  if hpmon.db[zone] and hpmon.db[zone][name] and hpmon.db[zone][name][level] then
+    return hpmon.db[zone][name][level]
+  end
+
   return {}
 end
 
@@ -457,23 +469,85 @@ end
 -- Widescan result
 --------------------
 
+local function remove_substring_and_trim(main_str, target)
+    -- Turn "Orcish" into "\s*[Oo][Rr][Cc][Ii][Ss][Hh]\s*"
+    local pattern = "%s*" .. target:gsub("%a", function(letter)
+        return string.format("[%s%s]", letter:lower(), letter:upper())
+    end) .. "%s*"
+
+    -- Run the gsub using our new case-insensitive pattern
+    return (main_str:gsub(pattern, ""))
+end
+
 function hpmon.handleWidescan(data)
   local packet = packets.parse('incoming', data)
-  local windowerMob = windower.ffxi.get_mob_by_index(packet['Index'])
-  if not windowerMob then
-    return
-  end
-  local mob = hpmon.getMob(windowerMob.id)
-  if not mob then
-    return
+
+  local index = packet["Index"]
+  local name = windower.ffxi.get_mob_list()[index] or packet['Name'] or ""
+  local modified_name = name
+  local lower_name = string.lower(name)
+  local return_value = nil
+
+  -- Filtering
+  if #hpmon.ws.names > 0 then
+    local keep = false
+    for _, filter_name in ipairs(hpmon.ws.names) do
+      if string.find(lower_name, filter_name) then
+        keep = true
+        break
+      end
+    end
+
+    if not keep then
+      return_value = true
+    end
   end
 
+  local id = 0x1000000 + bit.lshift(windower.ffxi.get_info().zone, 12) + index
+
+  -- Tagging (if not already filtered)
+  if not return_value and hpmon.ws.tag then
+    if #hpmon.ws.cuts > 0 then
+      for _, cut_name in ipairs(hpmon.ws.cuts) do
+        modified_name = remove_substring_and_trim(name, cut_name)
+      end
+    end
+
+    packet['Type'] = 0
+
+    local dbMob = hpmon.getDbStatsByValues(windower.ffxi.get_info().zone, name, packet['Level'])
+    local status = '?'
+    if not dbMob.min then
+      status = 'x'
+    elseif dbMob.min == dbMob.max then
+      status = 'o'
+    else
+      status = '~'
+    end
+
+    if hpmon.ws.taglevel then
+      packet['Name'] = (status .. packet['Level'] .. ' ' .. modified_name):sub(1, 15)
+    else
+      packet['Name'] = modified_name
+    end
+    return_value = packets.build(packet)
+  end
+
+  -- Get mob from local database cache
+  local mob = hpmon.getMob(id)
+  if not mob then
+    return return_value
+  end
+
+  -- Update mob with widescan information
   hpmon.setLevel(mob.id, packet['Level'])
   mob.requestedWidescan = false
   if mob.requestRecordedHP then
     windower.add_to_chat(7, string.format('[HPMon] %s (%d) is level %s', mob.name, mob.id, packet['Level']))
     hpmon.printRecordedHP(mob)
   end
+
+  return return_value
 end
 
 --------------------
@@ -535,7 +609,7 @@ function hpmon.chunkHandler(id, data, modified, injected, blocked)
     hpmon.handleCheckMessage(data)
     hpmon.handleDefeatMessage(data)
   elseif id == 0x0F4 then -- Widescan
-    hpmon.handleWidescan(data)
+    return hpmon.handleWidescan(data)
   end
 end
 
@@ -766,7 +840,12 @@ hpmon.outputCsv = hpmon.fileOpen('./data/hp.csv')
 
 hpmon.outputDbPath = 'data/db'
 hpmon.db = hpmon.loadDatabase(hpmon.outputDbPath)
-
+hpmon.ws = {
+  names = {},
+  cuts = {},
+  tag = true,
+  taglevel = true,
+}
 
 -----------------------
 -- InfoBox
@@ -866,39 +945,80 @@ windower.register_event('prerender', function()
   end
 
   hpmon.updateInfoBox()
-
-  -- if hpmon.editNames then
-  --   for _, mob in pairs(hpmon.mobs) do
-  --     local dbStats = hpmon.getDbStats(mob)
-  --     local status = dbStats.min == nil and '?'
-  --     if dbStats.min == nil then
-  --       status = '-'
-  --     elseif dbStats.min ~= dbStats.max then
-  --       status = '+'
-  --     else
-  --       status = nil
-  --     end
-  --     if status then
-  --       windower.set_mob_name(mob.id, string.format("%s%s", status, mob.name))
-  --     end
-  --   end
-  -- end
-
-  -- local time = socket.gettime()
-  -- if time > hpmon.nextWs then
-  --   hpmon.requestWidescan()
-  -- end
 end)
 
-windower.register_event('addon command', function (command, ...)
+
+windower.register_event('addon command', function (command, subcommand, ...)
 	command = command and command:lower()
 	if command == 'export' then
     hpmon.exportDatabaseCsv(hpmon.outputDbPath, hpmon.db)
+
   elseif command == 'debug' then
     hpmon.debug = not hpmon.debug
-    print("[HPMon] Debug is now " .. (hpmon.debug and 'ON' or 'OFF'))
-  elseif command == 'names' then
-    -- hpmon.editNames = not hpmon.editNames
-    -- print("[HPMon] Names is now " .. (hpmon.editNames and 'ON' or 'OFF'))
+    windower.add_to_chat(7, ("[HPMon] Debug is now " .. (hpmon.debug and 'ON' or 'OFF')))
+
+  elseif command == 'ws' then
+
+    -- Widescan filtering
+    local arg = table.concat({...})
+    if subcommand == "add" or subcommand == "a" then
+      if arg and #arg > 0 then
+        local search_name = string.lower(arg)
+        hpmon.ws.names[#hpmon.ws.names + 1] = search_name
+        windower.add_to_chat(7, '[HPMon] Now filtering widescan with: "' .. search_name .. '"')
+      else
+        windower.add_to_chat(7, "[HPMon] Filter widescan with: '//hpmon ws add <name>'")
+      end
+
+    elseif subcommand == "cut" or subcommand == "c" then
+      if arg and #arg > 0 then
+        local cut_name = string.lower(arg)
+        hpmon.ws.cuts[#hpmon.ws.cuts + 1] = cut_name
+        hpmon.ws.tag = true
+        windower.add_to_chat(7, '[HPMon] Now cutting widescan names by: "' .. cut_name .. '"')
+      else
+        windower.add_to_chat(7, "[HPMon] Cut widescan names with: '//hpmon ws cut <name>'")
+      end
+
+    elseif subcommand == "addcut" or subcommand == "ac" then
+      if arg and #arg > 0 then
+        local name = string.lower(arg)
+        hpmon.ws.names[#hpmon.ws.names + 1] = name
+        hpmon.ws.cuts[#hpmon.ws.cuts + 1] = name
+        hpmon.ws.tag = true
+        windower.add_to_chat(7, '[HPMon] Now filtering and cutting widescan names by: "' .. name .. '"')
+      else
+        windower.add_to_chat(7, "[HPMon] Filter and cut widescan names with: '//hpmon ws addcut <name>'")
+      end
+
+    elseif subcommand == "tag" or subcommand == "t" then
+      hpmon.ws.tag = not hpmon.ws.tag
+      windower.add_to_chat(7, '[HPMon] Tagging widescan results ' .. (hpmon.ws.tag and "ON" or "OFF"))
+
+    elseif subcommand == "level" or subcommand == "l" then
+      hpmon.ws.taglevel = not hpmon.ws.taglevel
+      if hpmon.ws.taglevel then
+        hpmon.ws.tag = true
+      end
+      windower.add_to_chat(7, '[HPMon] Tagging widescan results with level information ' .. (hpmon.ws.taglevel and "ON" or "OFF"))
+
+    elseif subcommand == "reset" or subcommand == "r" then
+      hpmon.ws.names = {}
+      hpmon.ws.cuts = {}
+      windower.add_to_chat(7, '[HPMon] Cleared widescan filtering and cutting')
+
+    else
+      windower.add_to_chat(7, "[HPMon] Unknown widescan subcommand: '" .. subcommand .. "'")
+    end
+
+  else
+    windower.add_to_chat(7, "[HPMon] //hpmon commands:")
+    windower.add_to_chat(7, "  ws add/a <name> -- Filters widescan results by the given name")
+    windower.add_to_chat(7, "  ws cut/c <name> -- Cuts names of widescan results by the given name, i.e. 'Goblin' removes Goblin from the names in the results")
+    windower.add_to_chat(7, "  ws addcut/ac <name>  -- Combines above add and cut commands")
+    windower.add_to_chat(7, "  ws reset/r -- Resets filtering and cuts of widescan results")
+    windower.add_to_chat(7, "  ws tag/t -- Toggles changing of names in widescan results")
+    windower.add_to_chat(7, "  ws level/l -- Toggles tagging of widescan result names with level information")
+    windower.add_to_chat(7, "  debug -- Enables debug logging")
 	end
 end)
