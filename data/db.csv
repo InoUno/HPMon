@@ -1,17 +1,50 @@
 Name,Zone,Level,Min,Max,Mid
+Acro Bat,102,10,179,179,179
+Acro Bat,102,8,144,144,144
+Acrophies,126,34,1145,1145,1145
+Adaman Quadav,148,73,3791,3791,3791
+Air Elemental,213,61,2998,3024,3011
 Akbaba,102,11,198,198,198
 Akbaba,102,12,218,218,218
 Akbaba,117,11,198,198,198
 Akbaba,117,12,218,218,218
 Akbaba,117,13,238,239,238.5
+Alraune,4,38,1704,1704,1704
+Alraune,4,39,1788,1788,1788
+Alraune,4,40,1873,1873,1873
+Ancient Bat,121,26,623,623,623
+Ancient Bat,121,27,658,658,658
+Ancient Bat,121,28,698,698,698
+Ancient Bat,184,27,658,658,658
+Ancient Bat,184,28,698,699,698.5
+Ancient Bat,184,29,735,735,735
+Ancient Quadav,147,62,3087,3087,3087
+Ancient Quadav,147,63,3158,3158,3158
+Ancient Quadav,147,64,3233,3233,3233
+Ancient Quadav,147,66,3378,3378,3378
+Ancient Quadav,148,70,3723,3723,3723
+Ancient Quadav,148,71,3793,3794,3793.5
 Antican Decurio,114,49,2395,2395,2395
 Ba,105,27,658,658,658
 Ba,105,28,698,698,698
+Ba,84,36,1305,1306,1305.5
 Ba,84,37,1383,1383,1383
+Babaulas,213,96,8435,8443,8439
+Babaulas,213,97,8630,8633,8631.5
+Babaulas,213,98,8818,8836,8827
+Bark Spider,153,60,3415,3416,3415.5
+Bark Spider,153,61,3500,3501,3500.5
+Bark Spider,153,62,3582,3584,3583
+Bark Spider,153,63,3667,3667,3667
 Bastion Bats,151,18,359,359,359
 Bastion Bats,151,19,386,386,386
 Bastion Bats,151,20,414,414,414
 Bastion Bats,151,21,443,444,443.5
+Battrap,2,23,599,599,599
+Battrap,2,24,635,635,635
+Battrap,2,25,673,673,673
+Battrap,2,26,711,711,711
+Battrap,2,27,751,751,751
 Battue Bats,192,-1,33,33,33
 Battue Bats,192,2,46,46,46
 Battue Bats,192,3,62,62,62
@@ -20,10 +53,20 @@ Beach Bunny,113,64,3743,3753,3748
 Beach Pugil,103,23,520,522,521
 Beach Pugil,103,24,556,559,557.5
 Beach Pugil,103,25,589,589,589
+Beady Beetle,2,15,320,320,320
+Beady Beetle,2,16,347,347,347
+Beady Beetle,2,17,375,375,375
+Beady Beetle,2,18,404,404,404
 Berry Grub,110,27,658,658,658
 Berry Grub,110,28,698,698,698
+Big Bat,157,29,765,765,765
+Big Bat,157,30,838,838,838
+Big Bat,157,31,902,902,902
 Big Jaw,124,45,2075,2076,2075.5
 Big Jaw,124,46,2158,2159,2158.5
+Big Jaw,147,37,1383,1383,1383
+Big Jaw,147,38,1466,1466,1466
+Big Jaw,147,39,1544,1544,1544
 Big Jaw,27,37,1472,1472,1472
 Big Jaw,27,38,1554,1555,1554.5
 Big Jaw,27,39,1631,1642,1636.5
@@ -33,23 +76,38 @@ Bigclaw,176,45,2069,2069,2069
 Bigclaw,176,46,2150,2150,2150
 Bigclaw,176,47,2232,2232,2232
 Bigclaw,176,48,2313,2313,2313
-Bigclaw,25,45,2068,2069,2068.5
+Bigclaw,25,45,2069,2069,2069
 Bigclaw,25,46,2150,2150,2150
-Bigclaw,25,47,2230,2232,2231
-Bigclaw,25,48,2312,2315,2313.5
+Bigclaw,25,47,2232,2232,2232
+Bigclaw,25,48,2313,2313,2313
+Birdtrap,2,29,833,833,833
+Birdtrap,2,31,974,974,974
+Birdtrap,2,32,1057,1057,1057
+Birdtrap,2,33,1139,1140,1139.5
 Black Bat,119,17,332,333,332.5
 Blade Bat,192,4,79,79,79
 Blade Bat,192,5,99,99,99
 Blade Bat,192,6,113,113,113
+Blizzard Gigas,112,46,2140,2162,2151
 Blood Bunny,193,17,333,333,333
 Blood Bunny,193,18,359,359,359
 Blood Bunny,193,19,386,386,386
+Bog Sahagin,176,56,3021,3022,3021.5
+Bogy,118,24,586,586,586
+Boll Weevil,82,57,5642,5642,5642
+Boribaba,213,95,7710,7719,7714.5
+Boribaba,213,96,7884,7914,7899
+Boribaba,213,97,8080,8125,8102.5
 Brass Quadav,110,28,600,601,600.5
 Brass Quadav,147,22,443,443,443
-Brass Quadav,147,23,471,474,472.5
+Brass Quadav,147,23,471,471,471
+Brass Quadav,147,24,502,502,502
 Brass Quadav,147,25,531,531,531
+Brass Quadav,147,28,629,631,630
 Bronze Quadav,110,32,823,824,823.5
 Bronze Quadav,110,33,894,894,894
+Bronze Quadav,147,32,831,831,831
+Bronze Quadav,147,33,900,901,900.5
 Broo,147,39,1589,1589,1589
 Broo,147,40,1671,1671,1671
 Broo,147,41,1749,1749,1749
@@ -58,19 +116,26 @@ Brutal Sheep,103,22,473,473,473
 Brutal Sheep,103,23,504,504,504
 Brutal Sheep,104,20,414,414,414
 Brutal Sheep,104,21,443,443,443
+Bugbear Deathsman,12,74,5393,5413,5403
+Bugbear Deathsman,12,75,5488,5518,5503
 Bugbear Servingman,11,32,1249,1251,1250
 Bugbear Servingman,11,33,1342,1344,1343
 Bugbear Servingman,11,34,1435,1436,1435.5
 Bugbear Servingman,11,35,1595,1595,1595
+Bugbear Trashman,12,66,4658,4661,4659.5
+Bugbear Trashman,12,67,4755,4755,4755
 Bull Dhalmel,118,21,443,443,443
 Bull Dhalmel,118,22,473,473,473
 Bull Dhalmel,118,23,504,504,504
 Bull Dhalmel,118,24,536,536,536
+Bulldog Bats,2,20,495,495,495
 Bulwark Bat,151,29,765,765,765
+Bulwark Bat,151,30,837,838,837.5
 Bulwark Bat,151,31,902,902,902
 Bumblebee,116,-1,33,33,33
 Canal Bats,27,42,1787,1787,1787
 Canal Bats,27,43,1864,1869,1866.5
+Canal Bats,27,44,1947,1949,1948
 Canal Bats,27,46,2107,2108,2107.5
 Canyon Crawler,117,12,218,218,218
 Canyon Crawler,117,13,239,239,239
@@ -82,6 +147,7 @@ Carnivorous Crawler,118,21,443,443,443
 Carnivorous Crawler,118,22,473,473,473
 Carnivorous Crawler,118,23,504,504,504
 Carnivorous Crawler,198,22,471,473,472
+Carnivorous Crawler,198,23,504,507,505.5
 Carnivorous Crawler,198,25,569,569,569
 Carrion Crow,116,3,62,62,62
 Carrion Crow,116,4,79,79,79
@@ -90,31 +156,82 @@ Carrion Worm,100,2,33,33,33
 Carrion Worm,100,3,45,45,45
 Carrion Worm,100,4,58,58,58
 Carrion Worm,100,5,74,74,74
+Caterpillar,147,22,473,474,473.5
+Caterpillar,147,23,504,504,504
+Caterpillar,147,24,536,536,536
+Catoblepas,4,76,4813,4814,4813.5
+Catoblepas,4,77,4899,4899,4899
+Cave Worm,160,61,3024,3024,3024
+Cave Worm,160,62,3100,3101,3100.5
+Cave Worm,160,63,3176,3176,3176
+Cave Worm,160,64,3252,3252,3252
 Champaign Coeurl,120,33,1061,1062,1061.5
 Champaign Coeurl,120,34,1145,1145,1145
+Chaos Idol,184,28,791,791,791
+Chaos Idol,184,29,833,833,833
+Chaos Idol,184,30,905,905,905
 Charging Sheep,147,28,698,698,698
 Charging Sheep,147,29,735,735,735
 Charging Sheep,147,30,803,804,803.5
+Cheiroptera,140,3,62,62,62
+Cheiroptera,140,4,79,79,79
+Cheiroptera,140,6,113,113,113
 Chelicerata,51,?,10239,10243,10241
 Chigoe,79,65,341,357,349
+Clipper,105,24,512,512,512
 Clipper,105,25,544,544,544
 Clipper,110,24,512,512,512
 Clipper,110,25,544,544,544
-Clipper,126,28,666,667,666.5
-Clipper,126,29,703,704,703.5
+Clipper,126,28,667,667,667
+Clipper,126,29,703,703,703
+Clipper,84,32,914,914,914
+Clipper,84,33,991,991,991
+Clipper,84,34,1072,1072,1072
+Clot,3,32,1057,1057,1057
+Clot,3,35,1306,1306,1306
+Coastal Opo-opo,4,36,1389,1389,1389
+Coastal Opo-opo,4,37,1472,1472,1472
+Coastal Opo-opo,4,38,1555,1555,1555
+Coastal Opo-opo,4,39,1638,1638,1638
+Coastal Sahagin,176,65,3503,3531,3517
 Coastal Sahagin,176,67,3683,3690,3686.5
+Cockatrice,213,50,2581,2581,2581
+Cockatrice,213,51,2665,2665,2665
+Cockatrice,213,52,2748,2748,2748
+Cockatrice,213,53,2831,2832,2831.5
+Cold Gigas,111,40,1626,1626,1626
+Cold Gigas,111,41,1704,1704,1704
+Cold Gigas,111,42,1787,1787,1787
+Cold Gigas,111,43,1865,1865,1865
 Combat,173,27,657,658,657.5
 Combat,173,28,698,698,698
 Combat,173,29,735,735,735
 Combat,173,30,802,803,802.5
+Copper Quadav,147,22,423,423,423
+Copper Quadav,147,23,449,449,449
+Copper Quadav,147,24,479,480,479.5
+Copper Quadav,147,25,508,509,508.5
+Copper Quadav,147,26,541,541,541
+Copper Quadav,147,27,571,571,571
 Crane Fly,119,20,414,414,414
 Crane Fly,119,21,443,443,443
 Crawler,116,4,79,79,79
 Crawler,116,5,99,99,99
 Crawler,116,6,113,113,113
+Creek Sahagin,123,34,1219,1219,1219
+Creek Sahagin,123,35,1358,1358,1358
+Creek Sahagin,123,37,1521,1521,1521
+Crimson Knight Crab,25,33,1061,1061,1061
+Crimson Knight Crab,25,34,1142,1142,1142
+Crimson Knight Crab,25,35,1224,1224,1224
+Crimson Knight Crab,25,36,1305,1305,1305
+Cryptonberry Harrier,9,54,2411,2411,2411
+Cryptonberry Stalker,9,54,2655,2656,2655.5
+Cutlass Scorpion,7,69,4168,4168,4168
 Cutter,151,30,770,770,770
 Cutter,151,31,833,833,833
 Cutter,151,32,914,914,914
+Cutter,3,33,800,1199,999.5
 Cwn Annwn,5,59,3330,3354,3342
 Cwn Annwn,5,62,3582,3587,3584.5
 Damselfly,103,20,414,414,414
@@ -122,9 +239,46 @@ Damselfly,103,21,443,443,443
 Damselfly,103,22,472,473,472.5
 Dark Bats,11,31,900,902,901
 Dark Bats,11,32,984,985,984.5
+Dark Bats,126,26,623,623,623
+Dark Bats,126,27,658,658,658
+Dark Elemental,9,50,2184,2189,2186.5
+Darksteel Quadav,147,63,3074,3074,3074
+Darksteel Quadav,147,64,3148,3148,3148
+Darksteel Quadav,147,65,3217,3217,3217
+Darksteel Quadav,147,66,3291,3291,3291
+Darksteel Quadav,147,67,3361,3361,3361
+Darksteel Quadav,148,70,3578,3579,3578.5
+Darksteel Quadav,148,71,3648,3648,3648
+Darksteel Quadav,148,72,3721,3723,3722
+Davoi Hornet,149,20,414,414,414
+Davoi Hornet,149,21,443,443,443
+Davoi Hornet,149,22,473,473,473
+Davoi Hornet,149,23,504,504,504
+Davoi Pugil,149,26,623,623,623
+Davoi Pugil,149,27,658,658,658
+Davoi Pugil,149,28,698,698,698
+Davoi Pugil,149,29,735,736,735.5
+Davoi Wasp,149,30,838,838,838
+Davoi Wasp,149,31,902,902,902
+Davoi Wasp,149,32,984,985,984.5
+Davoi Wasp,149,33,1062,1062,1062
+Death Cap,153,60,3415,3416,3415.5
+Death Cap,153,61,3500,3501,3500.5
+Death Cap,153,62,3583,3584,3583.5
+Death Cap,153,63,3667,3667,3667
 Death Jacket,123,34,1143,1147,1145
+Death Jacket,24,37,1472,1472,1472
+Death Jacket,24,38,1555,1555,1555
+Death Jacket,24,39,1638,1639,1638.5
+Death Jacket,24,40,1719,1721,1720
 Death Wasp,110,25,589,589,589
 Death Wasp,110,26,623,623,623
+Delta Sahagin,176,65,3772,3775,3773.5
+Delta Sahagin,176,66,3848,3865,3856.5
+Delta Sahagin,176,69,4107,4109,4108
+Demonic Pugil,160,73,4562,4562,4562
+Demonic Pugil,160,74,4644,4645,4644.5
+Demonic Pugil,160,76,4814,4815,4814.5
 Desert Beetle,125,47,2232,2232,2232
 Desert Beetle,125,48,2313,2313,2313
 Desert Beetle,125,49,2395,2395,2395
@@ -146,32 +300,84 @@ Desert Spider,125,41,1749,1749,1749
 Desert Spider,125,42,1830,1832,1831
 Desert Spider,125,43,1915,1915,1915
 Desert Spider,125,44,1998,1998,1998
-Desert Worm,125,43,1631,1632,1631.5
+Desert Worm,125,43,1632,1632,1632
 Desert Worm,125,44,1708,1710,1709
 Desert Worm,125,45,1781,1781,1781
 Desert Worm,125,46,1856,1856,1856
 Desert Worm,125,47,1932,1932,1932
 Devil Manta,176,66,3917,3932,3924.5
+Devil Manta,176,67,4000,4003,4001.5
+Devil Manta,176,68,4080,4086,4083
+Devil Manta,176,69,4168,4168,4168
+Digger Wasp,2,15,343,343,343
+Digger Wasp,2,16,371,371,371
+Digger Wasp,2,17,400,401,400.5
 Ding Bats,100,1,33,33,33
 Ding Bats,100,2,46,46,46
 Ding Bats,100,4,79,79,79
 Ding Bats,100,5,99,99,99
+Dire Bat,160,60,3416,3416,3416
+Dire Bat,160,61,3500,3501,3500.5
+Dire Bat,160,62,3583,3583,3583
+Dire Bat,160,63,3667,3667,3667
 Dire Bat,176,64,3748,3752,3750
+Dire Bat,9,63,3668,3668,3668
+Dire Bat,9,64,3750,3750,3750
+Dire Bat,9,65,3834,3834,3834
+Dire Bat,9,66,3917,3917,3917
+Dire Bat,9,67,4000,4001,4000.5
+Diremite Assaulter,9,63,3512,3512,3512
+Diremite Assaulter,9,64,3593,3594,3593.5
+Diremite Assaulter,9,65,3674,3676,3675
+Diremite Assaulter,9,66,3758,3759,3758.5
+Diremite Assaulter,9,67,3840,3840,3840
+Diremite,9,42,1794,1794,1794
+Diremite,9,43,1876,1876,1876
+Diremite,9,44,1957,1957,1957
+Diremite,9,45,2039,2039,2039
+Diremite,9,46,2120,2121,2120.5
+Diremite,9,47,2202,2202,2202
+Diremite,9,48,2282,2286,2284
+Dirtyhanded Gochakzuk,149,71,5676,5676,5676
 Diving Beetle,120,27,628,630,629
 Diving Beetle,120,28,667,668,667.5
 Diving Beetle,2,27,710,710,710
-Diving Beetle,2,28,748,749,748.5
-Diving Beetle,2,29,788,789,788.5
+Diving Beetle,2,28,749,749,749
+Diving Beetle,2,29,789,789,789
 Diving Beetle,2,30,830,830,830
+Duendes' Amoroso,27,45,1808,1828,1818
 Dung Beetle,193,23,495,495,495
 Dung Beetle,193,24,529,529,529
 Dung Beetle,193,25,561,561,561
 Dung Beetle,193,26,594,595,594.5
 Eft,4,33,1139,1140,1139.5
 Eft,4,34,1223,1224,1223.5
-Eft,4,35,1305,1306,1305.5
+Eft,4,35,1306,1306,1306
+Elder Goobbue,153,74,4642,4655,4648.5
+Elder Goobbue,153,75,4723,4730,4726.5
+Elder Goobbue,153,76,4814,4816,4815
+Elder Goobbue,153,77,4898,4903,4900.5
+Elder Quadav,147,42,1787,1787,1787
 Elder Quadav,147,43,1865,1865,1865
-Emerald Quadav,147,48,1915,1916,1915.5
+Elder Quadav,147,44,1947,1947,1947
+Elder Quadav,147,45,2025,2025,2025
+Elder Quadav,147,46,2108,2108,2108
+Elder Quadav,161,47,1972,1972,1972
+Elder Quadav,161,48,2046,2046,2046
+Elder Quadav,161,49,2116,2116,2116
+Elder Quadav,162,47,1972,1972,1972
+Elder Quadav,162,48,2046,2046,2046
+Elder Quadav,162,49,2116,2116,2116
+Emerald Quadav,147,45,1704,1704,1704
+Emerald Quadav,147,46,1776,1776,1776
+Emerald Quadav,147,47,1844,1844,1844
+Emerald Quadav,147,48,1915,1915,1915
+Emerald Quadav,147,49,1983,1983,1983
+Emerald Quadav,161,48,1915,1915,1915
+Emerald Quadav,161,49,1983,1983,1983
+Emerald Quadav,162,47,1844,1844,1844
+Emerald Quadav,162,48,1915,1915,1915
+Emerald Quadav,162,49,1983,1983,1983
 Esbat,5,59,3333,3334,3333.5
 Esbat,5,60,3410,3417,3413.5
 Esbat,5,61,3500,3501,3500.5
@@ -183,19 +389,123 @@ Flesh Eater,114,38,1257,1257,1257
 Flesh Eater,114,39,1333,1333,1333
 Flesh Eater,114,40,1408,1408,1408
 Flesh Eater,114,41,1481,1481,1481
-Flesh Eater,114,42,1556,1557,1556.5
+Flesh Eater,114,42,1557,1557,1557
 Flesh Eater,7,34,980,980,980
-Flesh Eater,7,35,1056,1057,1056.5
-Flesh Eater,7,36,1130,1133,1131.5
+Flesh Eater,7,35,1056,1056,1056
+Flesh Eater,7,36,1131,1131,1131
 Fly Agaric,193,21,443,443,443
 Fly Agaric,193,22,473,473,473
 Fly Agaric,193,23,504,505,504.5
 Fly Agaric,193,24,536,536,536
+Flytrap,1,20,495,495,495
+Flytrap,1,21,529,530,529.5
+Flytrap,1,24,635,636,635.5
+Flytrap,2,18,431,431,431
+Flytrap,2,19,463,463,463
+Flytrap,2,20,495,495,495
+Flytrap,2,21,528,529,528.5
+Flytrap,2,22,563,563,563
+Fomor Bard,27,47,2104,2104,2104
+Fomor Bard,28,54,2656,2656,2656
+Fomor Bard,28,55,2735,2735,2735
+Fomor Bard,28,56,2814,2814,2814
+Fomor Bard,28,57,2893,2893,2893
+Fomor Bard,28,58,2972,2972,2972
+Fomor Beastmaster,24,42,1794,1794,1794
+Fomor Beastmaster,28,55,2856,2866,2861
+Fomor Beastmaster,28,56,2926,2955,2940.5
+Fomor Black Mage,27,45,1811,1811,1811
+Fomor Black Mage,27,46,1886,1886,1886
+Fomor Black Mage,27,47,1962,1962,1962
+Fomor Black Mage,27,48,2037,2037,2037
+Fomor Black Mage,28,54,2492,2492,2492
+Fomor Black Mage,28,55,2567,2568,2567.5
+Fomor Black Mage,28,56,2644,2644,2644
+Fomor Dark Knight,27,44,1957,1959,1958
+Fomor Dark Knight,27,45,2022,2042,2032
+Fomor Dark Knight,27,46,2099,2121,2110
+Fomor Dark Knight,28,55,2856,2856,2856
+Fomor Dark Knight,28,56,2938,2938,2938
+Fomor Dark Knight,28,57,3020,3020,3020
+Fomor Dragoon,27,44,2023,2023,2023
+Fomor Dragoon,28,54,2855,2855,2855
+Fomor Dragoon,28,56,3022,3023,3022.5
+Fomor Monk,24,53,3033,3033,3033
+Fomor Monk,24,54,3118,3118,3118
+Fomor Monk,27,45,2355,2355,2355
+Fomor Monk,27,46,2440,2441,2440.5
+Fomor Monk,27,47,2524,2524,2524
+Fomor Monk,28,55,3263,3264,3263.5
+Fomor Monk,28,56,3348,3348,3348
+Fomor Monk,28,57,3433,3433,3433
+Fomor Ninja,24,52,2558,2558,2558
+Fomor Ninja,24,53,2637,2637,2637
+Fomor Ninja,24,54,2716,2718,2717
+Fomor Ninja,27,41,1847,1852,1849.5
 Fomor Ninja,27,42,1772,1774,1773
-Fomor Ninja,27,44,1927,1929,1928
+Fomor Ninja,27,43,1850,1851,1850.5
+Fomor Ninja,27,44,1929,1929,1929
+Fomor Ninja,27,45,2007,2008,2007.5
+Fomor Ninja,27,46,2086,2086,2086
+Fomor Ninja,28,55,2795,2795,2795
+Fomor Ninja,28,56,2874,2874,2874
+Fomor Paladin,27,44,1956,1962,1959
+Fomor Paladin,27,47,2223,2234,2228.5
+Fomor Paladin,28,55,2886,2886,2886
+Fomor Paladin,28,56,2968,2968,2968
+Fomor Ranger,24,42,1649,1649,1649
+Fomor Ranger,24,43,1699,1731,1715
+Fomor Ranger,27,44,1787,1805,1796
+Fomor Ranger,27,45,1866,1885,1875.5
+Fomor Ranger,27,47,2034,2034,2034
+Fomor Ranger,28,54,2575,2575,2575
+Fomor Ranger,28,55,2652,2652,2652
+Fomor Ranger,28,56,2730,2730,2730
+Fomor Red Mage,27,44,1867,1870,1868.5
+Fomor Red Mage,27,47,2100,2111,2105.5
+Fomor Red Mage,27,48,2183,2195,2189
+Fomor Red Mage,28,56,2810,2816,2813
+Fomor Samurai,24,54,2855,2855,2855
+Fomor Samurai,24,55,2939,2939,2939
+Fomor Samurai,27,44,2006,2028,2017
+Fomor Samurai,27,45,2098,2117,2107.5
+Fomor Samurai,28,55,2938,2939,2938.5
+Fomor Samurai,28,56,3022,3022,3022
+Fomor Summoner,24,42,1521,1521,1521
+Fomor Summoner,27,44,1669,1669,1669
+Fomor Summoner,27,45,1743,1743,1743
+Fomor Summoner,27,46,1816,1817,1816.5
+Fomor Summoner,28,54,2411,2411,2411
+Fomor Summoner,28,55,2486,2486,2486
+Fomor Summoner,28,56,2560,2560,2560
+Fomor Thief,24,42,1712,1712,1712
+Fomor Thief,24,44,1869,1869,1869
+Fomor Thief,24,53,2577,2577,2577
+Fomor Thief,24,54,2655,2657,2656
+Fomor Thief,27,44,1859,1879,1869
+Fomor Thief,27,45,1942,1964,1953
+Fomor Thief,27,46,2018,2042,2030
+Fomor Thief,27,47,2104,2104,2104
+Fomor Thief,27,48,2183,2183,2183
+Fomor Thief,28,54,2656,2656,2656
+Fomor Thief,28,55,2735,2735,2735
+Fomor Thief,28,56,2814,2814,2814
+Fomor Warrior,24,44,2053,2054,2053.5
+Fomor Warrior,27,44,2036,2058,2047
+Fomor Warrior,27,45,2124,2148,2136
+Fomor Warrior,27,46,2212,2232,2222
+Fomor Warrior,27,47,2272,2338,2305
+Fomor's Bat,24,34,343,343,343
+Fomor's Bats,28,49,703,703,703
+Fomor's Bats,28,50,737,737,737
+Fomor's Elemental,24,34,345,345,345
+Fomor's Elemental,27,39,466,466,466
+Fomor's Elemental,28,49,708,709,708.5
 Fomor's Wyvern,27,37,690,690,690
 Fomor's Wyvern,27,38,709,714,711.5
 Fomor's Wyvern,27,39,727,731,729
+Fomor's Wyvern,28,49,927,927,927
+Fomor's Wyvern,28,50,946,946,946
 Forest Funguar,100,4,79,79,79
 Forest Funguar,100,5,99,99,99
 Forest Funguar,100,6,113,113,113
@@ -205,51 +515,224 @@ Forest Hare,100,4,79,79,79
 Forest Hare,100,5,99,99,99
 Forest Tiger,104,24,536,536,536
 Forest Tiger,104,25,569,569,569
+Forest Tiger,2,22,563,563,563
+Forest Tiger,2,25,666,674,670
+Fosse Pugil,2,22,563,563,563
+Fosse Pugil,2,23,599,599,599
+Fosse Pugil,2,24,635,635,635
+Gale Bats,102,9,161,161,161
+Gallinipper,7,36,1389,1389,1389
+Gallinipper,7,37,1472,1472,1472
+Gallinipper,7,38,1555,1555,1555
+Garnet Quadav,110,32,816,816,816
+Gazer,9,42,1705,1705,1705
+Gazer,9,43,1783,1783,1783
+Gazer,9,44,1861,1861,1861
+Gazer,9,45,1939,1939,1939
+Geezard,149,34,1145,1145,1145
+Geezard,149,35,1223,1223,1223
+Geezard,149,36,1305,1305,1305
+Geezard,149,37,1383,1383,1383
+Ghoul,118,23,407,407,407
+Giant Ascetic,126,29,828,829,828.5
+Giant Ascetic,126,30,867,868,867.5
 Giant Bee,116,7,128,128,128
 Giant Bee,116,8,144,144,144
+Giant Gatekeeper,157,30,803,803,803
+Giant Gatekeeper,157,31,867,867,867
+Giant Gatekeeper,157,32,949,949,949
+Giant Gatekeeper,184,28,698,698,698
+Giant Gatekeeper,184,29,735,735,735
+Giant Gatekeeper,184,30,803,804,803.5
+Giant Guard,157,30,868,868,868
+Giant Guard,157,31,933,933,933
+Giant Guard,157,32,1017,1017,1017
+Giant Guard,184,28,791,791,791
+Giant Guard,184,29,829,829,829
+Giant Guard,184,30,868,868,868
+Giant Hunter,126,29,636,636,636
+Giant Hunter,126,30,671,671,671
+Giant Lobber,157,30,671,672,671.5
+Giant Lobber,157,31,731,731,731
+Giant Lobber,157,32,808,808,808
+Giant Lobber,184,28,600,602,601
+Giant Lobber,184,29,636,636,636
+Giant Lobber,184,30,671,671,671
+Giant Ranger,126,29,735,735,735
+Giant Ranger,126,30,803,803,803
+Giant Sentry,157,30,740,740,740
+Giant Sentry,157,31,803,803,803
+Giant Sentry,157,32,883,883,883
+Giant Sentry,184,28,667,667,667
+Giant Sentry,184,29,703,703,703
+Giant Sentry,184,30,740,740,740
 Giant Spider,114,30,838,838,838
 Giant Spider,114,31,902,902,902
 Giant Spider,114,32,983,984,983.5
 Giant Spider,114,33,1062,1062,1062
 Giant Spider,114,34,1145,1145,1145
+Giant Trapper,126,30,739,740,739.5
+Gigantobugard,24,40,1721,1721,1721
+Gigantobugard,24,41,1804,1804,1804
+Gigantobugard,24,42,1887,1887,1887
+Gigantobugard,24,43,1970,1970,1970
 Gigantobugard,25,41,1804,1804,1804
 Gigantobugard,25,42,1877,1887,1882
+Gigas Bonecutter,158,34,1072,1072,1072
+Gigas Bonecutter,158,35,1149,1149,1149
+Gigas Braver,24,41,1804,1804,1804
+Gigas Braver,24,42,1887,1887,1887
+Gigas Braver,24,43,1970,1970,1970
+Gigas Braver,24,44,2053,2053,2053
 Gigas Braver,25,42,1884,1888,1886
+Gigas Braver,25,43,1970,1970,1970
+Gigas Braver,25,44,2052,2053,2052.5
+Gigas Catapulter,24,41,1572,1572,1572
+Gigas Catapulter,24,42,1649,1649,1649
+Gigas Catapulter,24,43,1726,1726,1726
+Gigas Catapulter,24,44,1803,1803,1803
 Gigas Catapulter,25,41,1572,1572,1572
 Gigas Catapulter,25,42,1649,1649,1649
+Gigas Catapulter,25,43,1726,1729,1727.5
+Gigas Catapulter,25,44,1802,1803,1802.5
+Gigas Fighter,24,35,1306,1306,1306
+Gigas Fighter,24,36,1389,1389,1389
+Gigas Fighter,24,37,1472,1472,1472
 Gigas Foreman,173,36,1229,1230,1229.5
+Gigas Jailer,157,32,1055,1057,1056
+Gigas Jailer,157,33,1135,1135,1135
+Gigas Jailer,157,34,1219,1219,1219
+Gigas Kettlemaster,157,32,914,914,914
+Gigas Kettlemaster,157,33,989,992,990.5
+Gigas Kettlemaster,157,34,1072,1072,1072
+Gigas Martialist,24,41,1957,1957,1957
+Gigas Martialist,24,42,2040,2042,2041
+Gigas Martialist,24,43,2126,2126,2126
+Gigas Martialist,24,44,2210,2211,2210.5
 Gigas Martialist,25,43,2125,2128,2126.5
+Gigas Martialist,25,44,2211,2211,2211
+Gigas Quarrier,157,32,831,831,831
+Gigas Quarrier,157,33,905,905,905
+Gigas Quarrier,157,34,982,982,982
+Gigas Slinger,24,35,1110,1110,1110
+Gigas Slinger,24,36,1187,1187,1187
+Gigas Slinger,24,37,1264,1264,1264
+Gigas Slinger,24,38,1341,1341,1341
+Gigas Spirekeeper,158,34,1145,1145,1145
+Gigas Spirekeeper,158,35,1223,1223,1223
 Gigas Stonecarrier,173,37,1382,1383,1382.5
 Gigas Stonegrinder,173,36,1442,1442,1442
+Gigas Stonemason,158,34,982,982,982
+Gigas Stonemason,158,35,1056,1056,1056
+Gigas Torturer,158,34,1219,1219,1219
+Gigas Torturer,158,35,1358,1358,1358
+Gigas Wallwatcher,157,32,984,984,984
+Gigas Wallwatcher,157,34,1145,1145,1145
+Gigas Warwolf,24,41,1713,1713,1713
+Gigas Warwolf,24,42,1794,1794,1794
+Gigas Warwolf,24,43,1876,1876,1876
+Gigas Warwolf,24,44,1957,1957,1957
 Gigas Warwolf,25,41,1713,1713,1713
 Gigas Warwolf,25,43,1873,1876,1874.5
+Gigas Wrestler,24,35,1450,1450,1450
+Gigas Wrestler,24,36,1535,1535,1535
+Gigas Wrestler,24,37,1619,1619,1619
+Gigas Wrestler,24,38,1704,1704,1704
+Gigas's Bat,157,23,163,163,163
+Gigas's Bat,157,24,174,174,174
+Gigas's Bat,157,25,184,184,184
+Gigas's Bat,184,21,143,143,143
+Gigas's Bat,184,22,154,154,154
+Gigas's Bat,184,23,163,163,163
+Gigas's Bats,157,25,184,184,184
+Gigas's Bats,157,26,195,195,195
+Gigas's Bats,157,27,206,206,206
+Gigas's Bats,158,27,206,206,206
+Gigas's Bats,158,28,218,218,218
+Gigas's Bats,158,29,229,229,229
+Gigas's Leech,126,25,184,184,184
+Gigas's Sheep,24,34,366,366,366
+Gigas's Sheep,24,35,391,391,391
+Gigas's Sheep,24,36,416,416,416
 Gigas's Sheep,25,34,366,366,366
 Gigas's Sheep,25,35,391,391,391
 Gigas's Spider,173,29,228,229,228.5
-Gigas's Tiger,111,33,318,320,319
-Gigas's Tiger,111,35,365,367,366
+Gigas's Tiger,111,33,318,318,318
+Gigas's Tiger,111,34,343,343,343
+Gigas's Tiger,111,35,366,366,366
+Glide Bomb,2,21,529,529,529
+Glow Bat,126,29,735,735,735
+Goblin Alchemist,113,67,3595,3603,3599
+Goblin Alchemist,213,66,3505,3505,3505
+Goblin Alchemist,213,67,3581,3583,3582
+Goblin Alchemist,213,68,3660,3660,3660
+Goblin Alchemist,213,69,3737,3737,3737
+Goblin Alchemist,9,62,3195,3195,3195
+Goblin Alchemist,9,63,3271,3272,3271.5
+Goblin Alchemist,9,64,3350,3350,3350
+Goblin Alchemist,9,65,3426,3427,3426.5
 Goblin Ambusher,102,12,179,179,179
 Goblin Ambusher,103,17,279,279,279
 Goblin Ambusher,103,18,302,302,302
 Goblin Ambusher,117,13,197,197,197
 Goblin Ambusher,117,14,216,216,216
+Goblin Ambusher,118,17,279,279,279
 Goblin Ambusher,118,18,302,302,302
 Goblin Ambusher,118,19,325,326,325.5
 Goblin Ambusher,193,17,279,279,279
 Goblin Ambusher,193,19,325,326,325.5
+Goblin Ambusher,198,16,257,258,257.5
+Goblin Ambusher,198,17,279,279,279
+Goblin Ambusher,198,18,302,302,302
+Goblin Bandit,213,66,3604,3604,3604
+Goblin Bandit,213,67,3683,3683,3683
+Goblin Bandit,213,68,3745,3762,3753.5
+Goblin Bandit,213,69,3841,3841,3841
+Goblin Bandit,9,62,3288,3288,3288
+Goblin Bandit,9,63,3367,3367,3367
+Goblin Bandit,9,64,3446,3446,3446
 Goblin Bouncer,124,53,2831,2832,2831.5
 Goblin Bouncer,124,55,2999,2999,2999
+Goblin Bouncer,162,51,2665,2665,2665
+Goblin Bouncer,213,53,2832,2832,2832
+Goblin Bouncer,213,54,2915,2915,2915
+Goblin Bouncer,213,55,2998,2999,2998.5
+Goblin Bouncer,213,56,3082,3082,3082
+Goblin Bouncer,213,57,3166,3166,3166
+Goblin Bouncer,213,58,3249,3249,3249
+Goblin Bouncer,9,56,3081,3082,3081.5
+Goblin Bouncer,9,57,3166,3166,3166
+Goblin Bouncer,9,58,3249,3249,3249
+Goblin Bounty Hunter,105,30,905,905,905
+Goblin Bounty Hunter,105,31,974,974,974
+Goblin Bounty Hunter,105,33,1140,1140,1140
+Goblin Bounty Hunter,105,34,1223,1224,1223.5
+Goblin Bounty Hunter,118,17,400,401,400.5
+Goblin Bounty Hunter,118,18,431,431,431
+Goblin Bounty Hunter,118,19,463,463,463
+Goblin Bounty Hunter,118,20,494,495,494.5
+Goblin Bounty Hunter,126,10,215,215,215
+Goblin Bounty Hunter,126,30,905,905,905
+Goblin Bounty Hunter,126,31,974,974,974
+Goblin Bounty Hunter,126,32,1057,1057,1057
+Goblin Bounty Hunter,126,33,1140,1142,1141
+Goblin Bounty Hunter,126,34,1223,1223,1223
+Goblin Bounty Hunter,126,36,1388,1389,1388.5
 Goblin Butcher,102,12,218,218,218
 Goblin Butcher,102,13,239,239,239
 Goblin Butcher,117,12,218,219,218.5
 Goblin Butcher,117,13,239,239,239
 Goblin Butcher,117,14,261,261,261
+Goblin Butcher,118,17,332,333,332.5
 Goblin Butcher,118,18,358,359,358.5
 Goblin Butcher,118,19,386,386,386
 Goblin Butcher,193,17,333,333,333
 Goblin Butcher,193,18,358,359,358.5
 Goblin Butcher,193,19,386,386,386
 Goblin Butcher,193,20,413,414,413.5
+Goblin Butcher,198,16,308,308,308
+Goblin Butcher,198,17,333,333,333
+Goblin Butcher,198,18,359,359,359
 Goblin Craftsman,11,33,1138,1140,1139
 Goblin Craftsman,11,34,1220,1226,1223
 Goblin Digger,102,11,198,198,198
@@ -261,57 +744,245 @@ Goblin Digger,117,13,239,239,239
 Goblin Digger,118,20,415,414,414.5
 Goblin Digger,118,21,443,443,443
 Goblin Digger,124,43,1876,1877,1876.5
+Goblin Enchanter,162,47,2340,2340,2340
+Goblin Enchanter,162,50,2340,2340,2340
+Goblin Enchanter,162,51,2419,2419,2419
+Goblin Enchanter,162,52,2498,2498,2498
+Goblin Enchanter,213,54,2656,2656,2656
+Goblin Enchanter,213,55,2735,2735,2735
+Goblin Enchanter,213,56,2814,2814,2814
+Goblin Enchanter,213,57,2893,2893,2893
+Goblin Enchanter,213,58,2966,2972,2969
+Goblin Enchanter,9,56,2814,2815,2814.5
+Goblin Fireman,12,69,4168,4169,4168.5
 Goblin Fisher,116,4,79,79,79
 Goblin Fisher,116,5,99,99,99
 Goblin Fisher,116,6,113,113,113
+Goblin Foreman,12,67,3830,3842,3836
+Goblin Foreman,12,69,3998,4006,4002
+Goblin Furrier,105,30,694,694,694
+Goblin Furrier,105,31,754,754,754
 Goblin Furrier,110,31,754,754,754
 Goblin Furrier,110,32,831,831,831
+Goblin Furrier,111,36,1133,1134,1133.5
+Goblin Furrier,111,37,1207,1207,1207
+Goblin Furrier,121,31,753,754,753.5
+Goblin Furrier,121,33,905,905,905
 Goblin Furrier,123,32,830,831,830.5
 Goblin Furrier,123,33,904,905,904.5
 Goblin Furrier,123,34,982,982,982
+Goblin Furrier,157,30,694,694,694
+Goblin Furrier,157,31,754,754,754
+Goblin Furrier,157,32,831,831,831
+Goblin Furrier,157,33,905,905,905
+Goblin Furrier,157,34,982,982,982
+Goblin Furrier,7,37,1207,1207,1207
 Goblin Gambler,103,22,388,388,388
+Goblin Gambler,105,26,504,504,504
+Goblin Gambler,105,27,535,535,535
 Goblin Gambler,110,26,504,504,504
 Goblin Gambler,110,27,535,535,535
+Goblin Gambler,118,22,388,388,388
 Goblin Gambler,118,23,415,415,415
+Goblin Gambler,118,24,444,445,444.5
 Goblin Gambler,118,25,474,474,474
 Goblin Gambler,120,26,504,504,504
 Goblin Gambler,120,27,535,535,535
+Goblin Gambler,121,25,474,474,474
+Goblin Gambler,121,26,504,504,504
+Goblin Gambler,121,27,535,535,535
+Goblin Gambler,121,28,569,569,569
+Goblin Gambler,121,29,602,602,602
+Goblin Gambler,184,27,535,535,535
+Goblin Gambler,184,28,569,569,569
+Goblin Gambler,184,29,602,602,602
+Goblin Gambler,184,30,636,636,636
+Goblin Gambler,198,23,415,415,415
+Goblin Gambler,198,25,474,474,474
 Goblin Gutterman,11,33,955,958,956.5
 Goblin Hammerman,11,33,1059,1061,1060
+Goblin Hangman,12,76,4577,4585,4581
+Goblin Headman,12,76,4578,4578,4578
+Goblin Headman,12,77,4650,4664,4657
+Goblin Hunter,162,50,2265,2265,2265
+Goblin Hunter,162,51,2341,2342,2341.5
+Goblin Hunter,162,52,2420,2420,2420
+Goblin Hunter,213,53,2497,2497,2497
+Goblin Hunter,213,54,2575,2575,2575
+Goblin Hunter,213,55,2652,2652,2652
+Goblin Hunter,213,56,2730,2730,2730
+Goblin Hunter,213,57,2807,2807,2807
+Goblin Hunter,213,58,2883,2885,2884
+Goblin Hunter,9,58,2884,2886,2885
+Goblin Jeweler,9,57,2893,2893,2893
+Goblin Jeweler,9,58,2972,2974,2973
+Goblin Junkman,12,75,4725,4731,4728
+Goblin Junkman,12,76,4814,4814,4814
+Goblin Junkman,12,77,4894,4899,4896.5
+Goblin Leadman,11,33,1060,1061,1060.5
 Goblin Leecher,103,23,437,442,439.5
 Goblin Leecher,118,22,414,416,415
 Goblin Leecher,118,23,442,442,442
 Goblin Leecher,118,24,474,474,474
+Goblin Leecher,118,25,504,505,504.5
+Goblin Leecher,121,25,504,504,504
+Goblin Leecher,121,26,535,535,535
+Goblin Leecher,121,28,602,602,602
+Goblin Leecher,184,27,567,567,567
+Goblin Leecher,184,28,602,602,602
+Goblin Leecher,184,29,636,636,636
+Goblin Leecher,184,30,700,672,686
+Goblin Leecher,198,22,473,474,473.5
+Goblin Leecher,198,24,474,474,474
+Goblin Leecher,198,25,513,534,523.5
+Goblin Lengthman,12,66,3505,3506,3505.5
+Goblin Lengthman,12,68,3659,3679,3669
+Goblin Lengthman,12,69,3711,3739,3725
+Goblin Marksman,12,76,4280,4280,4280
+Goblin Marksman,12,77,4357,4359,4358
+Goblin Marksman,12,78,4434,4435,4434.5
+Goblin Mercenary,213,66,3917,3917,3917
+Goblin Mercenary,213,67,4000,4001,4000.5
+Goblin Mercenary,213,68,4084,4084,4084
+Goblin Mercenary,213,69,4168,4168,4168
+Goblin Mercenary,9,63,3667,3667,3667
+Goblin Mercenary,9,65,3834,3834,3834
+Goblin Miner,213,51,2419,2419,2419
+Goblin Miner,213,52,2498,2498,2498
+Goblin Miner,213,53,2577,2577,2577
+Goblin Miner,213,54,2656,2656,2656
+Goblin Miner,213,55,2735,2735,2735
+Goblin Miner,213,56,2814,2814,2814
+Goblin Miner,213,57,2892,2893,2892.5
+Goblin Mugger,105,26,564,564,564
 Goblin Mugger,110,26,564,564,564
 Goblin Mugger,110,27,597,597,597
 Goblin Mugger,118,23,468,468,468
 Goblin Mugger,118,24,500,502,501
-Goblin Mugger,118,25,531,536,533.5
+Goblin Mugger,118,25,532,532,532
 Goblin Mugger,120,27,597,598,597.5
+Goblin Mugger,121,25,532,532,532
+Goblin Mugger,121,27,596,597,596.5
+Goblin Mugger,121,28,634,634,634
+Goblin Mugger,121,29,669,669,669
+Goblin Mugger,184,27,597,597,597
+Goblin Mugger,184,28,634,634,634
+Goblin Mugger,184,29,669,669,669
+Goblin Mugger,184,30,705,705,705
+Goblin Mugger,198,23,468,468,468
+Goblin Mugger,198,24,500,501,500.5
+Goblin Packman,12,67,3840,3840,3840
+Goblin Packman,12,68,3916,3925,3920.5
+Goblin Pathfinder,105,30,770,770,770
+Goblin Pathfinder,105,31,833,833,833
 Goblin Pathfinder,110,31,833,833,833
 Goblin Pathfinder,110,32,914,915,914.5
+Goblin Pathfinder,111,35,1148,1149,1148.5
+Goblin Pathfinder,111,38,1388,1388,1388
 Goblin Pathfinder,120,31,833,833,833
 Goblin Pathfinder,124,35,1149,1149,1149
 Goblin Pathfinder,124,39,1465,1466,1465.5
+Goblin Pathfinder,157,30,770,771,770.5
+Goblin Pathfinder,157,31,833,833,833
+Goblin Pathfinder,157,32,914,914,914
+Goblin Pathfinder,157,33,991,991,991
+Goblin Pathfinder,157,34,1072,1072,1072
 Goblin Pathfinder,4,35,1148,1149,1148.5
+Goblin Pathfinder,4,36,1230,1231,1230.5
+Goblin Pathfinder,7,37,1305,1307,1306
+Goblin Pathfinder,7,38,1388,1388,1388
+Goblin Poacher,111,40,1464,1465,1464.5
+Goblin Poacher,111,41,1539,1539,1539
+Goblin Poacher,111,42,1616,1616,1616
 Goblin Poacher,114,46,1920,1922,1921
 Goblin Poacher,114,48,2073,2077,2075
 Goblin Poacher,114,49,2149,2149,2149
+Goblin Poacher,121,42,1616,1616,1616
+Goblin Poacher,121,43,1693,1693,1693
+Goblin Poacher,121,44,1770,1771,1770.5
+Goblin Poacher,121,45,1844,1844,1844
+Goblin Poacher,121,46,1921,1921,1921
+Goblin Poacher,124,48,2074,2075,2074.5
+Goblin Poacher,124,49,2148,2149,2148.5
+Goblin Poacher,161,47,1998,1998,1998
+Goblin Poacher,161,48,2075,2075,2075
+Goblin Poacher,161,49,2149,2149,2149
+Goblin Poacher,162,47,1997,1999,1998
+Goblin Poacher,162,48,2075,2075,2075
+Goblin Poacher,162,49,2149,2149,2149
+Goblin Poacher,213,47,1995,1998,1996.5
+Goblin Poacher,213,48,2075,2075,2075
+Goblin Poacher,213,49,2149,2149,2149
+Goblin Reaper,111,40,1584,1586,1585
+Goblin Reaper,111,41,1663,1663,1663
+Goblin Reaper,111,42,1745,1747,1746
+Goblin Reaper,111,43,1826,1826,1826
+Goblin Reaper,121,42,1744,1746,1745
+Goblin Reaper,121,43,1826,1826,1826
+Goblin Reaper,121,45,1985,1985,1985
+Goblin Reaper,121,46,2066,2066,2066
 Goblin Reaper,124,42,1745,1746,1745.5
 Goblin Reaper,124,43,1825,1826,1825.5
+Goblin Reaper,161,47,2148,2148,2148
+Goblin Reaper,161,48,2229,2229,2229
+Goblin Reaper,162,47,2148,2148,2148
+Goblin Reaper,162,48,2229,2229,2229
+Goblin Reaper,162,49,2305,2306,2305.5
+Goblin Reaper,213,47,2148,2148,2148
+Goblin Reaper,213,48,2229,2230,2229.5
+Goblin Reaper,213,49,2306,2306,2306
+Goblin Robber,111,40,1520,1520,1520
+Goblin Robber,111,41,1595,1595,1595
+Goblin Robber,111,42,1671,1673,1672
+Goblin Robber,111,43,1752,1752,1752
+Goblin Robber,121,42,1673,1673,1673
+Goblin Robber,121,43,1752,1752,1752
+Goblin Robber,121,44,1830,1830,1830
+Goblin Robber,121,45,1905,1905,1905
+Goblin Robber,121,46,1984,1984,1984
 Goblin Robber,124,48,2141,2142,2141.5
+Goblin Robber,161,47,2062,2062,2062
+Goblin Robber,161,48,2141,2141,2141
+Goblin Robber,162,47,2062,2062,2062
+Goblin Robber,162,48,2141,2141,2141
+Goblin Robber,162,49,2216,2217,2216.5
+Goblin Robber,213,46,1984,1984,1984
+Goblin Robber,213,47,2061,2062,2061.5
+Goblin Robber,213,48,2141,2141,2141
+Goblin Robber,213,49,2216,2216,2216
+Goblin Shaman,105,30,714,714,714
 Goblin Shaman,110,30,714,714,714
 Goblin Shaman,110,31,789,789,789
+Goblin Shaman,111,35,1006,1014,1010
+Goblin Shaman,111,36,1086,1086,1086
+Goblin Shaman,111,38,1234,1235,1234.5
 Goblin Shaman,124,34,1011,1011,1011
 Goblin Shaman,124,35,1086,1086,1086
 Goblin Shaman,124,36,1159,1159,1159
 Goblin Shaman,124,37,1235,1235,1235
 Goblin Shaman,124,38,1308,1308,1308
-Goblin Shaman,4,36,1085,1086,1085.5
+Goblin Shaman,157,29,655,656,655.5
+Goblin Shaman,157,30,714,714,714
+Goblin Shaman,157,31,789,789,789
+Goblin Shaman,157,32,862,862,862
+Goblin Shaman,157,33,938,939,938.5
+Goblin Shaman,4,35,1011,1011,1011
+Goblin Shaman,4,36,1086,1086,1086
+Goblin Shaman,7,35,1011,1011,1011
+Goblin Shepherd,213,66,3758,3758,3758
+Goblin Shepherd,213,67,3840,3840,3840
+Goblin Shepherd,213,68,3922,3922,3922
+Goblin Shepherd,213,69,4004,4004,4004
+Goblin Smithy,105,30,838,838,838
 Goblin Smithy,105,31,902,902,902
 Goblin Smithy,110,31,902,902,902
 Goblin Smithy,110,32,984,984,984
+Goblin Smithy,111,36,1303,1306,1304.5
+Goblin Smithy,111,37,1383,1383,1383
+Goblin Smithy,111,38,1466,1466,1466
 Goblin Smithy,120,32,983,984,983.5
+Goblin Smithy,121,31,902,902,902
+Goblin Smithy,121,32,984,984,984
 Goblin Smithy,123,32,983,984,983.5
 Goblin Smithy,123,33,1062,1063,1062.5
 Goblin Smithy,123,34,1145,1146,1145.5
@@ -323,6 +994,14 @@ Goblin Smithy,124,36,1305,1305,1305
 Goblin Smithy,124,37,1383,1383,1383
 Goblin Smithy,124,38,1466,1466,1466
 Goblin Smithy,124,39,1544,1544,1544
+Goblin Smithy,157,30,838,838,838
+Goblin Smithy,157,31,902,902,902
+Goblin Smithy,157,32,984,984,984
+Goblin Smithy,157,33,1062,1062,1062
+Goblin Smithy,157,34,1145,1145,1145
+Goblin Smithy,7,36,1305,1305,1305
+Goblin Smithy,7,38,1464,1467,1465.5
+Goblin Swordsman,12,78,6477,6481,6479
 Goblin Thug,100,4,69,69,69
 Goblin Thug,100,6,99,99,99
 Goblin Thug,100,7,112,112,112
@@ -340,12 +1019,32 @@ Goblin Thug,192,6,99,99,99
 Goblin Tinkerer,102,12,206,206,206
 Goblin Tinkerer,117,13,225,226,225.5
 Goblin Tinkerer,117,14,247,247,247
-Goblin Tinkerer,118,17,316,318,317
+Goblin Tinkerer,118,17,316,316,316
 Goblin Tinkerer,118,18,335,344,339.5
 Goblin Tinkerer,118,20,393,395,394
 Goblin Tinkerer,193,17,316,317,316.5
 Goblin Tinkerer,193,18,341,341,341
 Goblin Tinkerer,193,19,366,367,366.5
+Goblin Tinkerer,198,17,316,316,316
+Goblin Tinkerer,198,18,341,341,341
+Goblin Trader,111,42,1745,1745,1745
+Goblin Trader,111,43,1826,1826,1826
+Goblin Trader,121,42,1745,1745,1745
+Goblin Trader,121,43,1825,1826,1825.5
+Goblin Trader,121,44,1906,1908,1907
+Goblin Trader,121,45,1984,1985,1984.5
+Goblin Trader,121,46,2066,2066,2066
+Goblin Trader,161,47,2148,2148,2148
+Goblin Trader,161,48,2229,2229,2229
+Goblin Trader,161,49,2304,2306,2305
+Goblin Trader,162,47,2148,2148,2148
+Goblin Trader,162,48,2229,2229,2229
+Goblin Trader,162,49,2306,2306,2306
+Goblin Trader,213,47,2148,2148,2148
+Goblin Trader,213,48,2229,2229,2229
+Goblin Trader,213,49,2306,2306,2306
+Goblin Veterinarian,9,63,3512,3512,3512
+Goblin Veterinarian,9,64,3594,3595,3594.5
 Goblin Weaver,102,10,157,157,157
 Goblin Weaver,102,8,126,126,126
 Goblin Weaver,102,9,141,141,141
@@ -356,13 +1055,77 @@ Goblin Weaver,192,3,54,54,54
 Goblin Weaver,192,4,69,69,69
 Goblin Weaver,192,5,87,87,87
 Goblin Weaver,192,6,99,99,99
+Goblin's Bat,11,28,218,219,218.5
+Goblin's Bat,12,61,990,1001,995.5
+Goblin's Bat,12,64,1067,1075,1071
+Goblin's Bat,12,71,1261,1261,1261
+Goblin's Bat,12,72,1282,1297,1289.5
+Goblin's Bat,157,23,163,163,163
+Goblin's Bat,157,24,174,174,174
+Goblin's Bat,157,25,184,184,184
+Goblin's Bat,162,40,487,487,487
+Goblin's Bat,162,41,511,511,511
+Goblin's Bat,162,42,536,536,536
+Goblin's Bat,9,57,905,905,905
+Goblin's Bat,9,58,930,930,930
+Goblin's Bat,9,59,953,953,953
+Goblin's Bat,9,62,1026,1026,1026
+Goblin's Bats,161,40,487,487,487
+Goblin's Bats,161,41,511,511,511
+Goblin's Bats,161,42,536,536,536
 Goblin's Bee,110,23,163,163,163
 Goblin's Bee,110,24,174,174,174
 Goblin's Bee,110,25,184,184,184
 Goblin's Bee,124,28,218,219,218.5
 Goblin's Bee,124,30,251,251,251
 Goblin's Beetle,120,27,196,196,196
+Goblin's Dragonfly,105,24,174,174,174
+Goblin's Dragonfly,105,25,184,184,184
+Goblin's Gallinipper,7,33,318,318,318
+Goblin's Gallinipper,7,34,342,343,342.5
+Goblin's Leech,121,35,366,366,366
+Goblin's Leech,121,36,391,391,391
+Goblin's Leech,121,37,414,414,414
+Goblin's Leech,213,33,316,318,317
+Goblin's Leech,213,34,343,343,343
+Goblin's Leech,213,35,366,366,366
+Goblin's Leech,213,48,680,680,680
+Goblin's Leech,213,49,703,703,703
+Goblin's Leech,213,50,737,737,737
 Goblin's Rarab,4,29,249,249,249
+Goblin's Rarab,4,68,1225,1225,1225
+Goblin's Rarab,4,69,1250,1250,1250
+Goblin's Tiger,111,28,218,218,218
+Goblin's Tiger,111,29,228,229,228.5
+Goblin's Tiger,111,30,251,251,251
+Goblin's Tiger,111,34,343,343,343
+Goblin's Tiger,111,35,365,366,365.5
+Gold Quadav,147,54,2334,2334,2334
+Gold Quadav,147,55,2402,2402,2402
+Gold Quadav,147,56,2473,2473,2473
+Gold Quadav,147,57,2541,2541,2541
+Gold Quadav,147,58,2613,2613,2613
+Gold Quadav,162,50,2055,2056,2055.5
+Gold Quadav,162,51,2123,2123,2123
+Gold Quadav,162,52,2194,2194,2194
+Goliath Beetle,83,34,1072,1072,1072
+Goliath Beetle,83,35,1149,1149,1149
+Goliath Beetle,83,36,1230,1230,1230
+Goobbue Gardener,121,40,1664,1672,1668
+Goobbue Gardener,121,41,1748,1749,1748.5
+Goobbue Gardener,121,42,1825,1835,1830
+Goobbue Parasite,121,42,1832,1833,1832.5
+Goobbue Parasite,121,43,1915,1915,1915
+Goobbue Parasite,121,44,1998,1999,1998.5
+Goobbue Parasite,121,45,2076,2076,2076
+Graupel Gigas,112,45,2289,2289,2289
+Graupel Gigas,112,46,2374,2374,2374
+Graupel Gigas,112,47,2458,2458,2458
+Graupel Gigas,112,48,2543,2543,2543
+Greatclaw,176,66,3788,3788,3788
+Greatclaw,176,67,3870,3870,3870
+Greatclaw,176,68,3952,3952,3952
+Greatclaw,176,69,4034,4034,4034
 Greater Pugil,126,28,698,698,698
 Greater Pugil,126,29,735,735,735
 Greater Pugil,173,30,838,838,838
@@ -370,25 +1133,54 @@ Grotto Pugil,176,44,1997,1999,1998
 Grotto Pugil,176,45,2076,2076,2076
 Grotto Pugil,176,46,2159,2159,2159
 Grotto Pugil,176,47,2242,2242,2242
+Hawkeyed Dnatbat,149,28,1264,1264,1264
 Hecteyes,7,35,1159,1159,1159
-Hecteyes,7,37,1314,1316,1315
+Hecteyes,7,36,1237,1237,1237
+Hecteyes,7,37,1315,1315,1315
 Hecteyes,7,38,1393,1393,1393
+Hecteyes,7,39,1471,1471,1471
+Hell Bat,27,45,2135,2136,2135.5
+Hell Bat,27,46,2219,2219,2219
 Heraldic Imp,79,80,3127,3128,3127.5
 Heraldic Imp,79,81,3177,3185,3181
 Hill Lizard,119,21,443,443,443
 Hill Lizard,119,22,473,473,473
 Hill Lizard,120,25,589,589,589
 Hill Lizard,120,26,623,623,623
+Hobgoblin Animalier,4,72,4250,4250,4250
+Hobgoblin Animalier,4,73,4332,4332,4332
+Hobgoblin Animalier,4,74,4413,4414,4413.5
+Hobgoblin Fascinator,4,72,3860,3860,3860
+Hobgoblin Fascinator,4,73,3936,3936,3936
+Hobgoblin Fascinator,4,74,4012,4012,4012
+Hobgoblin Martialist,4,72,4478,4478,4478
+Hobgoblin Martialist,4,73,4562,4562,4562
+Hobgoblin Martialist,4,74,4645,4645,4645
+Hobgoblin Venerer,4,72,3970,3970,3970
+Hobgoblin Venerer,4,73,4047,4047,4047
+Hobgoblin Venerer,4,74,4125,4125,4125
+Hover Tank,159,66,3742,3749,3745.5
 Huge Spider,173,28,728,728,728
 Huge Spider,173,29,764,766,765
 Huge Spider,173,30,838,838,838
 Huge Spider,173,31,902,902,902
 Huge Wasp,102,11,198,198,198
+Humbaba,111,62,6805,6815,6810
+Iron Quadav,147,43,1617,1617,1617
+Iron Quadav,147,44,1690,1690,1690
 Iron Quadav,147,45,1786,1786,1786
+Iron Quadav,147,46,1860,1860,1860
+Iron Quadav,147,47,1930,1930,1930
+Iron Quadav,161,47,1930,1930,1930
+Iron Quadav,161,48,2003,2003,2003
+Iron Quadav,161,49,2072,2072,2072
+Iron Quadav,162,47,1930,1930,1930
+Iron Quadav,162,48,2003,2003,2003
+Iron Quadav,162,49,2072,2072,2072
 Ironshell,176,37,1307,1307,1307
 Ironshell,176,38,1388,1388,1388
 Ironshell,176,39,1465,1466,1465.5
-Ironshell,176,40,1543,1546,1544.5
+Ironshell,176,40,1546,1546,1546
 Island Rarab,4,34,1223,1223,1223
 Island Rarab,4,35,1306,1307,1306.5
 Island Rarab,4,36,1389,1390,1389.5
@@ -396,24 +1188,70 @@ Ivory Lizard,123,32,1020,1020,1020
 Ivory Lizard,123,33,1097,1099,1098
 Ivory Lizard,123,34,1179,1184,1181.5
 Ivory Lizard,123,35,1263,1263,1263
+Jagd Doll,157,33,1140,1140,1140
+Jagd Doll,157,34,1223,1223,1223
+Jagil,4,36,1389,1399,1394
 Jubjub,119,17,332,333,332.5
 Jubjub,119,18,359,359,359
+Keremet,28,57,6027,6048,6037.5
 Killer Bee,117,10,179,179,179
 Killer Bee,117,11,198,198,198
+Knight Crawler,153,62,3583,3583,3583
+Knight Crawler,153,63,3667,3667,3667
+Knight Crawler,153,64,3750,3750,3750
+Knight Crawler,153,65,3834,3834,3834
+Knight Crawler,153,66,3913,3922,3917.5
+Knight Crawler,153,67,3996,4001,3998.5
+Korrigan,153,72,4748,4748,4748
+Korrigan,153,73,4833,4833,4833
+Kraken,4,37,1471,1472,1471.5
+Labyrinth Leech,213,45,2076,2076,2076
+Labyrinth Leech,213,46,2159,2159,2159
+Labyrinth Leech,213,47,2242,2242,2242
+Labyrinth Leech,213,48,2325,2325,2325
+Labyrinth Lizard,9,54,2915,2915,2915
+Labyrinth Manticore,213,71,6592,6592,6592
+Labyrinth Manticore,213,74,6967,6967,6967
+Lagoon Sahagin,176,65,3417,3437,3427
+Lagoon Sahagin,176,66,3503,3510,3506.5
+Lagoon Sahagin,176,67,3575,3591,3583
+Lagoon Sahagin,176,69,3750,3765,3757.5
+Land Pugil,147,20,414,414,414
+Land Pugil,147,21,443,443,443
+Land Pugil,147,22,473,473,473
+Land Pugil,147,23,504,507,505.5
+Land Pugil,2,17,401,401,401
+Land Pugil,2,18,430,431,430.5
+Land Pugil,2,19,463,463,463
 Land Worm,126,26,504,504,504
-Land Worm,126,27,534,535,534.5
+Land Worm,126,27,535,535,535
 Land Worm,173,20,329,329,329
 Land Worm,173,21,354,354,354
 Land Worm,173,22,380,380,380
 Land Worm,173,23,407,407,407
 Land Worm,173,24,435,435,435
 Land Worm,173,25,464,464,464
+Larva,147,35,1222,1225,1223.5
+Larva,147,36,1305,1305,1305
+Larva,147,37,1383,1383,1383
+Larva,147,38,1466,1466,1466
 Leaping Lizzy,107,?,297,298,297.5
+Leshachikha,24,51,2665,2665,2665
+Leshachikha,24,52,2748,2748,2748
+Leshachikha,24,53,2832,2832,2832
+Leshy,24,54,2915,2915,2915
 Lesser Colibri,51,64,3445,3446,3445.5
 Lesser Colibri,51,65,3523,3528,3525.5
 Lesser Colibri,52,63,3367,3371,3369
 Lesser Colibri,52,64,3443,3451,3447
 Lesser Colibri,52,65,3522,3529,3525.5
+Lesser Gaylas,121,39,1589,1589,1589
+Lesser Gaylas,121,40,1670,1671,1670.5
+Lesser Gaylas,121,41,1749,1749,1749
+Lesser Gaylas,121,42,1832,1832,1832
+Living Statue,111,37,1424,1424,1424
+Living Statue,111,38,1505,1508,1506.5
+Living Statue,111,39,1589,1589,1589
 Lycopodium,84,29,863,863,863
 Lycopodium,84,30,907,907,907
 Lycopodium,84,31,972,972,972
@@ -424,6 +1262,12 @@ Lycopodium,96,25,679,679,679
 Mad Sheep,102,11,198,198,198
 Mad Sheep,102,12,218,218,218
 Mad Sheep,102,13,239,239,239
+Magic Jar,157,31,909,911,910
+Magic Jar,157,32,990,990,990
+Magic Pot,157,28,734,734,734
+Magic Pot,157,29,774,774,774
+Magic Urn,158,34,1150,1151,1150.5
+Magic Urn,158,35,1230,1230,1230
 Magicked Bones,192,6,84,84,84
 Magicked Bones,192,7,95,95,95
 Makara,123,35,1222,1223,1222.5
@@ -439,18 +1283,40 @@ Makara,212,49,2403,2403,2403
 Makara,25,46,2219,2219,2219
 Makara,25,47,2302,2302,2302
 Makara,25,48,2385,2385,2385
+Maledict Millstone,9,66,3747,3749,3748
+Maledict Millstone,9,67,3820,3838,3829
 Mandragora,116,4,85,85,85
 Mandragora,116,5,106,106,106
+Manipulator,159,60,10248,10249,10248.5
 Mantrap,25,46,2219,2219,2219
 Mantrap,25,48,2385,2385,2385
+Mantrap,25,49,2467,2468,2467.5
 Marine Dhalmel,4,34,1223,1223,1223
 Marine Dhalmel,4,35,1306,1306,1306
 Marine Dhalmel,4,36,1389,1390,1389.5
 Marine Dhalmel,4,37,1472,1472,1472
+Marsh Funguar,2,21,528,529,528.5
+Marsh Funguar,2,24,635,635,635
 Marsh Murre,79,67,3683,3685,3684
+Marsh Sahagin,176,52,2948,2948,2948
+Marsh Sahagin,176,53,3033,3033,3033
+Marsh Sahagin,176,54,3118,3118,3118
+Marsh Sahagin,176,55,3263,3263,3263
+Marsh Sahagin,176,56,3348,3348,3348
+Marsh Sahagin,176,57,3433,3433,3433
+Marsh Sahagin,176,58,3518,3518,3518
+Marsh Sahagin,176,59,3603,3603,3603
+Master Coeurl,121,44,1998,1998,1998
+Master Coeurl,121,46,2159,2162,2160.5
+Master Coeurl,121,47,2242,2242,2242
+Maze Lizard,9,44,2053,2053,2053
+Maze Lizard,9,45,2136,2136,2136
+Maze Lizard,9,46,2219,2219,2219
+Maze Lizard,9,47,2302,2302,2302
 Maze Maker,198,18,282,282,282
 Maze Maker,198,19,305,305,305
 Maze Maker,198,20,329,329,329
+Maze Maker,198,21,354,354,354
 Meat Maggot,151,29,765,765,765
 Meat Maggot,151,30,838,838,838
 Meat Maggot,151,31,902,902,902
@@ -463,17 +1329,74 @@ Mighty Rarab,118,15,283,284,283.5
 Mighty Rarab,118,16,308,308,308
 Mighty Rarab,118,17,333,333,333
 Mighty Rarab,118,18,359,361,360
+Mimas,158,36,1305,1305,1305
+Mindcraver,169,60,2918,2964,2941
+Moblin Aidman,12,75,4202,4203,4202.5
+Moblin Aidman,12,77,4354,4376,4365
+Moblin Chapman,11,33,904,905,904.5
+Moblin Draftsman,12,67,3480,3480,3480
+Moblin Draftsman,12,68,3556,3556,3556
+Moblin Draftsman,12,69,3632,3632,3632
+Moblin Engineman,12,76,4164,4164,4164
+Moblin Engineman,12,77,4289,4289,4289
+Moblin Engineman,12,78,4316,4316,4316
+Moblin Groundman,12,77,8945,8951,8948
 Moblin Ragman,11,33,1005,1005,1005
+Moblin Roadman,12,75,4315,4315,4315
+Moblin Roadman,12,77,4473,4489,4481
+Moblin Tankman,12,67,3574,3588,3581
+Moblin Tankman,12,68,3659,3665,3662
+Moblin Topsman,12,77,4466,4476,4471
+Moblin Topsman,12,79,4631,4631,4631
+Moblin Workman,12,68,3762,3762,3762
+Moblin Yardman,12,66,3597,3608,3602.5
+Moblin Yardman,12,68,3755,3764,3759.5
+Mold Bats,157,25,589,589,589
+Mold Bats,157,26,623,623,623
+Mold Bats,157,27,658,658,658
+Monarch Ogrefly,7,65,3834,3834,3834
+Monarch Ogrefly,7,66,3917,3917,3917
+Monarch Ogrefly,7,67,4000,4001,4000.5
 Moon Bat,110,25,589,589,589
 Moon Bat,110,26,623,623,623
 Moon Bat,120,25,589,589,589
 Moon Bat,120,26,622,623,622.5
+Moss Eater,153,62,3583,3583,3583
+Moss Eater,153,63,3667,3668,3667.5
+Moss Eater,153,64,3750,3750,3750
+Moss Eater,153,65,3834,3834,3834
+Moss Eater,153,66,3916,3917,3916.5
+Mourioche,153,62,3858,3858,3858
+Mourioche,153,63,3942,3944,3943
+Mourioche,153,64,4028,4028,4028
+Mourioche,153,65,4152,4153,4152.5
+Mourioche,153,66,4237,4238,4237.5
+Mourioche,153,67,4322,4323,4322.5
+Mourioche,153,68,4402,4414,4408
 Mouse Bat,100,4,79,79,79
 Mouse Bat,100,5,99,99,99
 Mouse Bat,100,6,113,113,113
+Mousse,176,64,3749,3752,3750.5
 Mousse,176,65,3834,3834,3834
+Mushussu,213,51,2650,2667,2658.5
+Mushussu,213,52,2743,2750,2746.5
+Mushussu,213,53,2832,2832,2832
+Mushussu,213,54,2915,2915,2915
+Mysticmaker Profblix,213,51,4514,4516,4515
+Mythril Quadav,147,53,2331,2331,2331
+Mythril Quadav,147,54,2405,2405,2405
+Mythril Quadav,147,55,2475,2475,2475
+Mythril Quadav,147,56,2548,2548,2548
+Mythril Quadav,147,57,2617,2617,2617
+Mythril Quadav,162,50,2119,2119,2119
+Mythril Quadav,162,51,2189,2189,2189
+Mythril Quadav,162,52,2262,2262,2262
+Myxomycete,121,41,1749,1749,1749
+Myxomycete,121,42,1832,1833,1832.5
+Myxomycete,121,43,1915,1915,1915
 Myxomycete,121,44,1998,1998,1998
 Myxomycete,121,45,2076,2076,2076
+Myxomycete,121,46,2159,2159,2159
 Night Bats,119,16,308,308,308
 Nightmare Bats,205,68,4083,4084,4083.5
 Nightmare Bats,205,69,4167,4168,4167.5
@@ -481,46 +1404,296 @@ Nightmare Bats,205,70,4310,4311,4310.5
 Nightmare Bats,205,71,4395,4395,4395
 Nightmare Bats,205,72,4474,4481,4477.5
 Ogrefly,121,41,1748,1749,1748.5
+Ogrefly,121,42,1832,1832,1832
 Ogrefly,121,43,1915,1915,1915
 Ogrefly,121,44,1997,1998,1997.5
+Old Goobbue,153,67,3997,4003,4000
 Old Quadav,110,28,629,629,629
+Old Quadav,147,22,440,441,440.5
+Old Quadav,147,23,469,470,469.5
+Old Quadav,147,24,500,501,500.5
+Old Quadav,147,25,531,531,531
+Old Quadav,147,26,562,562,562
+Orcish Beastrider,105,30,847,847,847
+Orcish Beastrider,105,31,916,916,916
+Orcish Beastrider,149,33,1098,1098,1098
+Orcish Beastrider,149,34,1189,1189,1189
+Orcish Beastrider,149,35,1273,1273,1273
+Orcish Beastrider,149,36,1362,1362,1362
+Orcish Beastrider,149,37,1447,1447,1447
+Orcish Bowshooter,149,42,1862,1862,1862
+Orcish Bowshooter,149,43,1949,1949,1949
+Orcish Bowshooter,149,44,2036,2036,2036
+Orcish Bowshooter,149,45,2117,2117,2117
+Orcish Bowshooter,149,46,2204,2204,2204
+Orcish Bowshooter,150,42,1856,1864,1860
+Orcish Bowshooter,150,43,1948,1952,1950
+Orcish Bowshooter,150,46,2204,2208,2206
+Orcish Bowshooter,24,41,1728,1729,1728.5
+Orcish Bowshooter,24,42,1813,1813,1813
+Orcish Bowshooter,24,43,1898,1899,1898.5
+Orcish Bowshooter,24,44,1983,1983,1983
+Orcish Bowshooter,25,43,1897,1899,1898
 Orcish Bowshooter,25,44,1983,1985,1984
-Orcish Fighter,105,27,688,690,689
+Orcish Brawler,105,30,997,997,997
+Orcish Brawler,105,31,1069,1069,1069
+Orcish Brawler,149,35,1483,1483,1483
+Orcish Brawler,149,36,1575,1575,1575
+Orcish Brawler,149,37,1662,1662,1662
+Orcish Brawler,149,38,1754,1754,1754
+Orcish Brawler,149,39,1841,1841,1841
+Orcish Champion,149,64,4394,4394,4394
+Orcish Champion,149,65,4532,4532,4532
+Orcish Champion,149,66,4624,4624,4624
+Orcish Champion,149,67,4717,4717,4717
+Orcish Champion,149,68,4810,4810,4810
+Orcish Champion,150,64,4394,4394,4394
+Orcish Champion,150,65,4532,4532,4532
+Orcish Champion,150,66,4624,4624,4624
+Orcish Champion,150,67,4717,4717,4717
+Orcish Champion,150,68,4810,4810,4810
+Orcish Cursemaker,105,26,529,529,529
+Orcish Cursemaker,105,27,561,561,561
+Orcish Cursemaker,149,22,418,418,418
+Orcish Cursemaker,149,23,447,447,447
+Orcish Cursemaker,149,24,480,480,480
+Orcish Cursemaker,149,25,511,511,511
+Orcish Cursemaker,149,26,542,542,542
+Orcish Cursemaker,149,27,575,575,575
+Orcish Cursemaker,2,21,379,380,379.5
+Orcish Cursemaker,2,24,467,467,467
+Orcish Cursemaker,2,25,497,497,497
+Orcish Dragoon,149,65,4217,4217,4217
+Orcish Dragoon,149,66,4308,4308,4308
+Orcish Dragoon,149,67,4401,4401,4401
+Orcish Dragoon,149,68,4492,4492,4492
+Orcish Dragoon,149,69,4584,4584,4584
+Orcish Dragoon,150,65,4217,4217,4217
+Orcish Dragoon,150,66,4308,4308,4308
+Orcish Dragoon,150,67,4400,4401,4400.5
+Orcish Dragoon,150,68,4492,4492,4492
+Orcish Dragoon,150,69,4582,4592,4587
+Orcish Dreadnought,149,63,4033,4033,4033
+Orcish Dreadnought,149,64,4125,4125,4125
+Orcish Dreadnought,149,65,4217,4217,4217
+Orcish Dreadnought,149,66,4308,4308,4308
+Orcish Dreadnought,149,67,4401,4401,4401
+Orcish Dreadnought,150,63,4033,4033,4033
+Orcish Dreadnought,150,65,4217,4217,4217
+Orcish Dreadnought,150,66,4308,4308,4308
+Orcish Dreadnought,150,67,4401,4401,4401
+Orcish Farkiller,149,62,3700,3700,3700
+Orcish Farkiller,149,63,3788,3788,3788
+Orcish Farkiller,149,64,3875,3875,3875
+Orcish Farkiller,149,65,3963,3963,3963
+Orcish Farkiller,149,66,4050,4050,4050
+Orcish Farkiller,150,63,3788,3788,3788
+Orcish Farkiller,150,64,3869,3877,3873
+Orcish Farkiller,150,65,3962,3964,3963
+Orcish Farkiller,150,66,4049,4050,4049.5
+Orcish Fighter,104,21,481,481,481
+Orcish Fighter,105,26,654,654,654
+Orcish Fighter,105,27,690,690,690
+Orcish Fighter,149,22,513,513,513
+Orcish Fighter,149,23,546,546,546
+Orcish Fighter,149,24,583,583,583
+Orcish Fighter,149,25,618,618,618
+Orcish Fighter,149,26,654,654,654
+Orcish Fighter,2,21,481,481,481
+Orcish Fighter,2,24,583,583,583
+Orcish Fighter,2,25,618,618,618
+Orcish Firebelcher,149,41,1749,1752,1750.5
 Orcish Fodder,100,3,62,62,62
 Orcish Fodder,100,4,79,79,79
 Orcish Fodder,100,5,99,99,99
 Orcish Fodder,100,6,113,113,113
 Orcish Fodder,100,7,128,128,128
 Orcish Fodder,102,10,179,179,179
+Orcish Fodder,102,9,161,162,161.5
+Orcish Fodder,140,7,128,128,128
+Orcish Fodder,140,8,144,144,144
+Orcish Fodder,140,9,161,161,161
+Orcish Footsoldier,149,43,2106,2106,2106
+Orcish Footsoldier,149,44,2197,2197,2197
+Orcish Footsoldier,149,45,2283,2283,2283
+Orcish Footsoldier,149,46,2374,2374,2374
+Orcish Footsoldier,149,47,2466,2466,2466
+Orcish Footsoldier,150,43,2106,2106,2106
+Orcish Footsoldier,150,44,2197,2197,2197
+Orcish Footsoldier,150,46,2373,2374,2373.5
+Orcish Footsoldier,150,47,2466,2467,2466.5
+Orcish Footsoldier,24,41,1984,1984,1984
+Orcish Footsoldier,24,42,2075,2075,2075
+Orcish Footsoldier,24,43,2167,2167,2167
+Orcish Footsoldier,24,44,2258,2258,2258
+Orcish Footsoldier,25,41,1984,1984,1984
 Orcish Footsoldier,25,43,2167,2169,2168
+Orcish Footsoldier,25,44,2258,2258,2258
+Orcish Gladiator,149,44,2346,2346,2346
+Orcish Gladiator,149,45,2499,2499,2499
+Orcish Gladiator,149,46,2591,2591,2591
+Orcish Gladiator,149,47,2684,2684,2684
+Orcish Gladiator,149,48,2776,2776,2776
+Orcish Gladiator,150,44,2331,2348,2339.5
+Orcish Gladiator,150,45,2491,2509,2500
+Orcish Gladiator,150,46,2591,2591,2591
+Orcish Gladiator,150,47,2682,2703,2692.5
+Orcish Gladiator,150,48,2766,2778,2772
+Orcish Gladiator,24,41,2152,2153,2152.5
+Orcish Gladiator,24,42,2246,2247,2246.5
+Orcish Gladiator,24,43,2338,2338,2338
+Orcish Gladiator,24,44,2432,2432,2432
+Orcish Gladiator,25,41,2152,2152,2152
 Orcish Gladiator,25,43,2337,2338,2337.5
 Orcish Grappler,100,3,67,67,67
 Orcish Grappler,100,4,85,85,85
+Orcish Grappler,100,5,106,106,106
 Orcish Grappler,100,6,121,121,121
 Orcish Grappler,100,7,137,137,137
+Orcish Grappler,102,10,191,191,191
 Orcish Grappler,102,9,172,172,172
+Orcish Grappler,140,7,136,136,136
+Orcish Grappler,140,8,153,153,153
+Orcish Grappler,140,9,171,171,171
+Orcish Grunt,102,12,218,218,218
+Orcish Grunt,140,12,218,218,218
+Orcish Grunt,140,13,239,239,239
+Orcish Grunt,2,16,307,308,307.5
+Orcish Grunt,2,17,333,333,333
+Orcish Grunt,2,18,359,359,359
+Orcish Impaler,105,30,888,888,888
+Orcish Impaler,105,31,959,959,959
+Orcish Impaler,149,32,1049,1049,1049
+Orcish Impaler,149,33,1135,1135,1135
+Orcish Impaler,149,34,1226,1226,1226
+Orcish Impaler,149,35,1312,1312,1312
+Orcish Impaler,149,36,1402,1402,1402
+Orcish Mesmerizer,100,4,58,58,58
 Orcish Mesmerizer,100,5,74,74,74
 Orcish Mesmerizer,100,6,84,84,84
+Orcish Mesmerizer,102,10,134,134,134
 Orcish Mesmerizer,102,9,120,120,120
+Orcish Mesmerizer,140,7,98,98,98
+Orcish Mesmerizer,140,8,110,110,110
+Orcish Mesmerizer,140,9,123,123,123
 Orcish Neckchopper,104,17,316,316,316
+Orcish Neckchopper,2,16,292,292,292
+Orcish Neckchopper,2,17,316,316,316
+Orcish Neckchopper,2,18,341,341,341
+Orcish Neckchopper,2,20,394,395,394.5
+Orcish Nightraider,105,30,763,763,763
+Orcish Nightraider,105,31,829,829,829
+Orcish Nightraider,149,34,1108,1108,1108
+Orcish Nightraider,149,35,1190,1190,1190
+Orcish Nightraider,149,36,1276,1276,1276
+Orcish Nightraider,149,37,1357,1357,1357
+Orcish Nightraider,149,38,1444,1444,1444
+Orcish Nightraider,24,37,1390,1391,1390.5
+Orcish Nightraider,24,38,1475,1475,1475
+Orcish Predator,149,53,2906,2915,2910.5
+Orcish Predator,149,54,2994,3002,2998
+Orcish Predator,149,56,3166,3183,3174.5
+Orcish Predator,149,57,3256,3263,3259.5
+Orcish Predator,150,53,2913,2913,2913
+Orcish Predator,150,54,3000,3000,3000
+Orcish Predator,150,55,3088,3088,3088
+Orcish Predator,150,56,3175,3175,3175
+Orcish Predator,150,57,3263,3263,3263
+Orcish Serjeant,104,21,457,457,457
+Orcish Serjeant,105,26,623,623,623
+Orcish Serjeant,105,27,659,659,659
+Orcish Serjeant,149,22,490,490,490
+Orcish Serjeant,149,23,521,521,521
+Orcish Serjeant,149,24,558,558,558
+Orcish Serjeant,149,25,592,592,592
+Orcish Serjeant,149,26,626,626,626
+Orcish Serjeant,149,27,662,662,662
+Orcish Serjeant,149,28,703,703,703
+Orcish Serjeant,2,22,488,488,488
+Orcish Serjeant,2,23,519,519,519
+Orcish Serjeant,2,24,555,555,555
+Orcish Stonechucker,2,18,302,302,302
+Orcish Stonechucker,2,19,326,326,326
+Orcish Stonechucker,2,20,351,351,351
 Orcish Stonelauncher,25,43,1969,1970,1969.5
+Orcish Stonelauncher,25,45,2139,2139,2139
+Orcish Trooper,149,45,2234,2234,2234
+Orcish Trooper,149,46,2324,2324,2324
+Orcish Trooper,149,47,2414,2414,2414
+Orcish Trooper,149,48,2504,2504,2504
+Orcish Trooper,149,49,2589,2589,2589
+Orcish Trooper,150,48,2497,2506,2501.5
+Orcish Trooper,24,41,1884,1884,1884
+Orcish Trooper,24,43,2063,2063,2063
+Orcish Trooper,24,44,2152,2152,2152
+Orcish Veteran,149,52,3017,3025,3021
+Orcish Veteran,149,53,3114,3115,3114.5
+Orcish Veteran,149,54,3197,3216,3206.5
+Orcish Veteran,149,55,3298,3308,3303
+Orcish Veteran,149,56,3384,3390,3387
+Orcish Veteran,150,52,3022,3022,3022
+Orcish Veteran,150,53,3115,3115,3115
+Orcish Veteran,150,54,3206,3206,3206
+Orcish Veteran,150,55,3298,3298,3298
+Orcish Veteran,150,56,3390,3390,3390
+Orcish Warchief,149,55,3238,3238,3238
+Orcish Warchief,149,56,3328,3328,3328
+Orcish Warchief,149,57,3419,3419,3419
+Orcish Warchief,149,58,3510,3510,3510
+Orcish Warchief,149,59,3600,3601,3600.5
+Orcish Warchief,150,55,3235,3239,3237
+Orcish Warchief,150,57,3419,3419,3419
+Orcish Warchief,150,58,3509,3510,3509.5
+Orcish Warchief,150,59,3600,3601,3600.5
+Orcish Zerker,149,54,3147,3148,3147.5
+Orcish Zerker,149,55,3238,3239,3238.5
+Orcish Zerker,149,56,3328,3343,3335.5
+Orcish Zerker,149,57,3413,3420,3416.5
+Orcish Zerker,150,54,3147,3147,3147
+Orcish Zerker,150,55,3238,3238,3238
+Orcish Zerker,150,56,3328,3328,3328
+Orcish Zerker,150,57,3419,3419,3419
+Orcish Zerker,150,58,3510,3510,3510
 Ornery Sheep,107,5,99,99,99
 Ornery Sheep,107,6,113,113,113
 Ornery Sheep,88,25,589,589,589
 Ornery Sheep,88,26,623,623,623
 Ornery Sheep,88,27,658,658,658
 Ornery Sheep,88,28,698,698,698
+Ose,213,74,9290,9290,9290
+Padfoot,24,38,3110,3111,3110.5
+Panzer Doll,157,31,974,974,974
+Panzer Doll,157,32,1057,1058,1057.5
+Platinum Quadav,147,64,3058,3058,3058
+Platinum Quadav,147,65,3126,3126,3126
+Platinum Quadav,147,66,3198,3198,3198
+Platinum Quadav,147,67,3266,3266,3266
+Platinum Quadav,147,68,3338,3338,3338
+Platinum Quadav,148,69,3404,3406,3405
+Platinum Quadav,148,70,3455,3455,3455
+Poison Funguar,2,16,371,371,371
+Poison Funguar,2,17,400,401,400.5
+Poison Funguar,2,18,431,432,431.5
+Poison Funguar,2,19,463,463,463
 Poison Leech,110,25,588,589,588.5
 Poison Leech,110,26,623,623,623
 Poison Leech,118,21,443,444,443.5
-Poison Leech,118,22,474,473,473.5
-Poison Leech,118,23,506,504,505
+Poison Leech,118,22,473,473,473
+Poison Leech,118,23,504,504,504
+Poison Leech,118,24,536,536,536
 Poison Leech,193,25,588,589,588.5
 Poison Leech,193,26,623,623,623
 Poison Leech,193,27,658,658,658
+Pond Sahagin,176,36,1442,1442,1442
+Pond Sahagin,176,37,1521,1521,1521
+Pond Sahagin,176,38,1604,1605,1604.5
+Pond Sahagin,176,39,1684,1684,1684
+Porphyrion,158,36,1305,1305,1305
 Pug Pugil,116,5,99,99,99
 Pug Pugil,116,6,113,113,113
 Pug Pugil,116,7,128,128,128
+Purgatory Bat,12,72,4477,4489,4483
+Purgatory Bat,12,74,4641,4647,4644
 Pygmaioi,117,10,191,191,191
 Pygmaioi,117,11,211,211,211
 Pygmaioi,117,8,154,154,154
@@ -534,36 +1707,49 @@ Razorjaw Pugil,176,57,3166,3166,3166
 Razorjaw Pugil,176,58,3249,3249,3249
 Razorjaw Pugil,176,59,3333,3333,3333
 Razorjaw Pugil,176,60,3416,3416,3416
+Rime Gigas,111,40,1546,1546,1546
+Rime Gigas,111,41,1623,1623,1623
+Rime Gigas,111,42,1704,1704,1704
+Rime Gigas,111,43,1781,1781,1781
 River Crab,116,3,59,59,59
 River Crab,116,4,75,75,75
 River Crab,116,5,94,94,94
 Robber Crab,113,64,3624,3624,3624
-Robber Crab,113,65,3702,3714,3708
+Robber Crab,113,65,3703,3714,3708.5
 Robber Crab,113,66,3786,3789,3787.5
-Robber Crab,113,67,3869,3870,3869.5
+Robber Crab,113,67,3870,3870,3870
+Robber Crab,153,62,3460,3461,3460.5
+Robber Crab,153,63,3542,3542,3542
+Robber Crab,153,64,3624,3624,3624
+Robber Crab,153,65,3706,3706,3706
+Robber Crab,153,66,3788,3788,3788
 Robber Crab,176,62,3460,3460,3460
-Robber Crab,176,63,3535,3542,3538.5
+Robber Crab,176,63,3542,3542,3542
 Robber Crab,176,64,3620,3628,3624
 Robber Crab,176,65,3700,3706,3703
-Robber Crab,176,66,3787,3788,3787.5
+Robber Crab,176,66,3788,3788,3788
 Robber Crab,176,67,3866,3870,3868
-Rock Crab,176,53,2720,2722,2721
-Rock Crab,176,54,2804,2809,2806.5
-Rock Crab,176,55,2882,2887,2884.5
-Rock Crab,176,56,2966,2969,2967.5
-Rock Crab,176,57,3042,3066,3054
-Rock Crab,176,58,3132,3134,3133
-Rock Eater,102,10,133,134,133.5
+Rock Crab,176,53,2722,2722,2722
+Rock Crab,176,54,2804,2804,2804
+Rock Crab,176,55,2886,2886,2886
+Rock Crab,176,56,2968,2968,2968
+Rock Crab,176,57,3050,3050,3050
+Rock Crab,176,58,3132,3132,3132
+Rock Eater,102,10,134,134,134
 Rock Eater,102,11,149,149,149
 Rock Lizard,107,5,99,99,99
 Rock Lizard,107,6,112,113,112.5
 Rock Lizard,107,8,144,144,144
+Royal Leech,176,36,1305,1305,1305
+Royal Leech,176,37,1383,1383,1383
+Ruby Quadav,148,72,3618,3618,3618
+Rumble Crawler,159,56,3081,3082,3081.5
 Saa Doyi the Fervid,151,38,2352,2353,2352.5
 Sabertooth Tiger,105,31,902,902,902
 Sabertooth Tiger,105,32,984,984,984
 Sabertooth Tiger,120,31,902,902,902
 Sabertooth Tiger,120,32,984,984,984
-Sabertooth Tiger,2,29,833,836,834.5
+Sabertooth Tiger,2,29,833,833,833
 Sabertooth Tiger,2,30,905,906,905.5
 Sabertooth Tiger,2,31,974,974,974
 Sabertooth Tiger,2,32,1055,1057,1056
@@ -572,10 +1758,28 @@ Sand Beetle,114,37,1307,1307,1307
 Sand Beetle,114,38,1388,1388,1388
 Sand Beetle,114,39,1465,1465,1465
 Sand Beetle,114,40,1546,1546,1546
+Sand Cockatrice,113,71,4303,4303,4303
+Sand Cockatrice,113,72,4385,4385,4385
+Sand Cockatrice,113,73,4467,4467,4467
+Sand Cockatrice,113,74,4549,4549,4549
 Sand Eater,208,58,2795,2796,2795.5
 Sand Eater,208,59,2871,2872,2871.5
 Sand Hare,103,16,307,308,307.5
 Sand Hare,103,17,332,333,332.5
+Sand Lizard,113,62,3569,3585,3577
+Sand Lizard,113,63,3664,3688,3676
+Sand Lizard,113,64,3750,3750,3750
+Sand Lizard,113,65,3822,3839,3830.5
+Sand Lizard,113,66,3915,3927,3921
+Sand Lizard,7,67,4000,4001,4000.5
+Sand Lizard,7,68,4084,4084,4084
+Sapphire Quadav,147,65,3008,3008,3008
+Sapphire Quadav,147,66,3078,3078,3078
+Sapphire Quadav,147,67,3144,3144,3144
+Sapphire Quadav,147,68,3214,3215,3214.5
+Sapphire Quadav,147,69,3280,3280,3280
+Sapphire Quadav,148,70,3328,3360,3344
+Sapphire Quadav,148,72,3487,3487,3487
 Sauromugue Skink,120,31,902,902,902
 Sauromugue Skink,120,32,984,984,984
 Savanna Rarab,116,2,46,46,46
@@ -586,8 +1790,8 @@ Scarab Beetle,100,4,75,75,75
 Scarab Beetle,100,5,94,94,94
 Scarab Beetle,100,6,107,107,107
 Scarab Beetle,100,7,121,121,121
-Scavenger Crab,169,60,3295,3299,3297
-Scavenger Crab,169,61,3377,3379,3378
+Scavenger Crab,169,60,3296,3296,3296
+Scavenger Crab,169,61,3378,3378,3378
 Screamer,104,18,359,359,359
 Sea Monk,173,35,1223,1223,1223
 Seeker Bats,173,22,489,489,489
@@ -595,15 +1799,38 @@ Seeker Bats,173,23,520,520,520
 Seeker Bats,173,24,556,557,556.5
 Seeker Bats,173,25,589,589,589
 Seeker Bats,173,26,623,623,623
+Seeker Bats,184,25,589,589,589
+Seeker Bats,184,26,623,623,623
+Seeker Bats,184,27,658,658,658
+Shoal Pugil,118,24,556,557,556.5
 Shoal Pugil,118,25,589,589,589
 Shoal Pugil,118,26,623,623,623
-Shore Sahagin,176,62,3858,3865,3861.5
+Shoal Pugil,118,27,658,658,658
+Shore Sahagin,176,62,3858,3858,3858
+Shore Sahagin,176,63,3933,3947,3940
+Shore Sahagin,176,66,4238,4238,4238
+Shore Sahagin,176,67,4323,4323,4323
+Shore Sahagin,176,68,4408,4408,4408
+Shore Sahagin,176,69,4493,4493,4493
+Shore Sahagin,176,70,4578,4578,4578
+Shore Sahagin,176,71,4663,4663,4663
 Shrieker,193,25,589,589,589
 Shrieker,193,26,623,623,623
 Shrieker,193,27,658,659,658.5
+Shrieker,2,28,790,791,790.5
 Shrieker,2,30,905,905,905
 Shrieker,2,31,974,974,974
 Silver Quadav,110,32,784,785,784.5
+Silver Quadav,147,33,868,868,868
+Silver Quadav,147,36,1078,1079,1078.5
+Skimmer,153,72,4478,4480,4479
+Skimmer,153,73,4561,4562,4561.5
+Skimmer,153,74,4644,4645,4644.5
+Sleet Gigas,111,40,1590,1590,1590
+Sleet Gigas,111,41,1669,1669,1669
+Sleet Gigas,111,42,1748,1748,1748
+Sleet Gigas,111,43,1827,1827,1827
+Slippery Sucker,126,42,3108,3113,3110.5
 Slumbering Samwell,102,?,521,521,521
 Smilodon,84,46,2159,2159,2159
 Smilodon,84,47,2242,2242,2242
@@ -616,11 +1843,59 @@ Snipper,104,20,394,394,394
 Snipper,118,19,367,368,367.5
 Snipper,118,20,394,394,394
 Snipper,118,21,422,422,422
-Spinel Quadav,147,46,1827,1831,1829
+Snipper,118,22,451,451,451
+Snow Gigas,111,40,1768,1768,1768
+Snow Gigas,111,41,1847,1847,1847
+Snow Gigas,111,42,1931,1931,1931
+Snow Gigas,111,43,2010,2010,2010
+Snowball,9,44,2053,2053,2053
+Snowball,9,45,2136,2136,2136
+Snowball,9,46,2219,2219,2219
+Snowball,9,50,2581,2581,2581
+Soulstealer Skullnix,213,70,7840,7840,7840
+Soulstealer Skullnix,213,71,7998,7998,7998
+Specter Bat,2,16,371,372,371.5
+Spider Wasp,2,19,463,463,463
+Spinel Quadav,147,44,1556,1556,1556
+Spinel Quadav,147,45,1622,1622,1622
+Spinel Quadav,147,46,1692,1692,1692
+Spinel Quadav,147,47,1758,1758,1758
+Spinel Quadav,147,48,1828,1828,1828
+Spinel Quadav,161,47,1758,1758,1758
+Spinel Quadav,161,48,1828,1828,1828
+Spinel Quadav,161,49,1894,1894,1894
+Spinel Quadav,162,47,1758,1758,1758
+Spinel Quadav,162,48,1828,1828,1828
+Spinel Quadav,162,49,1894,1895,1894.5
+Splinterspine Grukjuk,24,37,2498,2531,2514.5
+Spring Sahagin,176,36,1034,1549,1291.5
+Spring Sahagin,176,39,1345,1373,1359
 Stag Beetle,104,22,451,451,451
 Stag Beetle,104,23,481,481,481
 Stag Beetle,119,22,451,451,451
 Stag Beetle,119,23,481,481,481
+Stag Beetle,2,20,465,465,465
+Stag Beetle,2,21,497,497,497
+Stag Beetle,2,22,530,530,530
+Stag Beetle,2,23,564,564,564
+Stag Beetle,82,40,1586,1586,1586
+Stag Beetle,82,41,1663,1663,1663
+Stag Beetle,82,42,1745,1745,1745
+Stag Beetle,82,43,1826,1826,1826
+Stalking Sapling,105,23,504,504,504
+Stalking Sapling,105,24,536,536,536
+Steel Quadav,147,52,2289,2289,2289
+Steel Quadav,147,53,2358,2358,2358
+Steel Quadav,147,54,2432,2432,2432
+Steel Quadav,147,55,2502,2502,2502
+Steel Quadav,147,56,2575,2575,2575
+Steel Quadav,162,50,2146,2146,2146
+Steel Quadav,162,51,2216,2216,2216
+Steel Quadav,162,52,2289,2289,2289
+Steelshell,153,73,4362,4363,4362.5
+Steelshell,153,74,4444,4444,4444
+Steelshell,153,75,4526,4527,4526.5
+Steelshell,153,76,4608,4608,4608
 Stegotaur,27,44,2408,2412,2410
 Steppe Hare,102,8,144,144,144
 Steppe Hare,102,9,161,161,161
@@ -631,6 +1906,10 @@ Stink Bats,198,16,308,308,308
 Stink Bats,198,17,333,333,333
 Stirge,11,33,1140,1140,1140
 Stirge,11,35,1223,1223,1223
+Stirge,157,27,658,658,658
+Stirge,157,28,698,699,698.5
+Stirge,157,29,735,736,735.5
+Strolling Sapling,102,8,143,144,143.5
 Strolling Sapling,102,9,161,162,161.5
 Strolling Sapling,117,10,179,179,179
 Strolling Sapling,117,7,128,128,128
@@ -639,7 +1918,16 @@ Strolling Sapling,117,9,161,161,161
 Stygian Pugil,169,63,3665,3667,3666
 Stygian Pugil,169,64,3750,3750,3750
 Stygian Pugil,169,65,3833,3834,3833.5
-Sylvestre,118,15,330,331,330.5
+Succubus Bats,12,64,3580,3599,3589.5
+Succubus Bats,12,65,3659,3669,3664
+Succubus Bats,160,66,3914,3923,3918.5
+Succubus Bats,160,67,4000,4001,4000.5
+Succubus Bats,160,68,4083,4087,4085
+Swamp Sahagin,176,53,2554,2582,2568
+Swamp Sahagin,176,57,2888,2907,2897.5
+Sword Sorcerer Solisoq,12,82,14346,14368,14357
+Sylvestre,118,15,331,331,331
+Sylvestre,118,16,356,356,356
 Sylvestre,118,17,382,382,382
 Sylvestre,118,18,409,409,409
 Sylvestre,118,19,437,437,437
@@ -649,13 +1937,19 @@ Tavnazian Sheep,25,34,1223,1223,1223
 Tavnazian Sheep,25,35,1306,1307,1306.5
 Tavnazian Sheep,25,36,1389,1389,1389
 Tavnazian Sheep,25,37,1472,1472,1472
+Teine Sith,4,76,4814,4814,4814
+Temple Bee,159,61,3500,3502,3501
+Temple Guardian,159,65,3833,3843,3838
 Terror Pugil,113,66,3917,3917,3917
 Terror Pugil,113,67,4000,4001,4000.5
 Terror Pugil,113,68,4084,4084,4084
 Terror Pugil,113,69,4165,4168,4166.5
 Terror Pugil,113,70,4302,4311,4306.5
+Thickshell,1,18,404,404,404
 Thickshell,102,13,226,226,226
 Thickshell,102,14,247,247,247
+Thousand Eyes,9,64,3458,3458,3458
+Thousand Eyes,9,65,3537,3537,3537
 Thread Leech,103,23,503,504,503.5
 Thread Leech,103,24,536,536,536
 Thread Leech,173,28,728,729,728.5
@@ -666,35 +1960,118 @@ Thread Leech,193,19,384,386,385
 Thread Leech,193,20,414,414,414
 Thread Leech,193,21,443,443,443
 Thunder Elemental,130,78,4314,4320,4317
+Thunder Elemental,153,70,3706,3709,3707.5
 Thunderclaw Thuban,120,0,4041,4054,4047.5
 Thunderclaw Thuban,120,47,3909,3913,3911
 Tiny Lycopodium,95,12,232,233,232.5
 Tiny Mandragora,116,-1,36,36,36
 Tococo,107,?,161,161,161
+Tonberry Beleaguerer,160,66,3305,3305,3305
+Tonberry Beleaguerer,160,67,3380,3380,3380
+Tonberry Beleaguerer,160,68,3479,3487,3483
+Tonberry Beleaguerer,160,69,3529,3529,3529
 Tonberry Creeper,124,45,1905,1905,1905
 Tonberry Creeper,124,46,1983,1984,1983.5
 Tonberry Creeper,124,47,2062,2063,2062.5
 Tonberry Creeper,124,48,2140,2141,2140.5
+Tonberry Cutter,159,54,2716,2716,2716
+Tonberry Cutter,159,55,2795,2795,2795
+Tonberry Cutter,159,56,2874,2874,2874
+Tonberry Cutter,159,58,3032,3033,3032.5
+Tonberry Cutter,159,59,3113,3113,3113
+Tonberry Dismayer,159,64,3103,3103,3103
 Tonberry Harasser,124,45,1743,1743,1743
 Tonberry Harasser,124,49,2039,2039,2039
+Tonberry Harrier,159,54,2411,2411,2411
+Tonberry Harrier,159,55,2485,2486,2485.5
+Tonberry Harrier,159,56,2560,2560,2560
+Tonberry Harrier,159,57,2634,2647,2640.5
 Tonberry Hexer,124,45,1780,1781,1780.5
 Tonberry Hexer,124,46,1856,1857,1856.5
 Tonberry Hexer,124,47,1932,1932,1932
 Tonberry Hexer,124,48,2007,2007,2007
+Tonberry Imprecator,160,62,3100,3101,3100.5
+Tonberry Imprecator,160,63,3176,3176,3176
+Tonberry Imprecator,160,64,3252,3252,3252
+Tonberry Maledictor,159,61,3023,3024,3023.5
+Tonberry Maledictor,159,62,3092,3119,3105.5
+Tonberry Pursuer,159,61,3209,3209,3209
+Tonberry Pursuer,159,63,3367,3367,3367
+Tonberry Pursuer,159,64,3446,3446,3446
+Tonberry Slasher,160,67,3803,3803,3803
+Tonberry Slasher,160,68,3878,3883,3880.5
+Tonberry Slasher,160,69,3961,3961,3961
+Tonberry Stabber,159,62,3406,3411,3408.5
+Tonberry Stabber,159,63,3487,3487,3487
+Tonberry Stabber,159,64,3566,3566,3566
+Tonberry Stalker,159,54,2656,2656,2656
+Tonberry Stalker,159,55,2735,2735,2735
+Tonberry Stalker,159,56,2814,2814,2814
+Tonberry Stalker,159,57,2893,2893,2893
+Tonberry Stalker,159,58,2972,2972,2972
+Tonberry Stalker,159,59,2720,3399,3059.5
+Tonberry Trailer,160,62,3288,3288,3288
+Tonberry Trailer,160,63,3367,3367,3367
+Tonberry Trailer,160,64,3446,3446,3446
+Tonberry Trailer,160,65,3525,3525,3525
 Tonberry's Elemental,124,38,442,442,442
 Tonberry's Elemental,124,40,490,490,490
+Tonberry's Elemental,159,43,563,563,563
+Tonberry's Elemental,159,45,607,612,609.5
+Tonberry's Elemental,159,55,850,851,850.5
+Tonberry's Elemental,160,54,835,838,836.5
+Tonberry's Elemental,160,55,874,876,875
+Topaz Quadav,147,55,2352,2352,2352
+Topaz Quadav,147,56,2422,2422,2422
+Topaz Quadav,147,57,2489,2489,2489
+Topaz Quadav,147,58,2560,2560,2560
+Topaz Quadav,147,59,2627,2627,2627
+Topaz Quadav,162,50,2010,2010,2010
+Topaz Quadav,162,51,2077,2077,2077
+Topaz Quadav,162,52,2145,2150,2147.5
+Torama,213,70,4311,4311,4311
+Torama,213,71,4395,4395,4395
+Torama,213,72,4478,4478,4478
+Torama,213,73,4562,4562,4562
+Toucan,4,38,1554,1555,1554.5
+Toucan,4,40,1721,1721,1721
+Tower Bats,157,27,658,658,658
+Tower Bats,157,28,698,698,698
+Tower Bats,157,29,735,735,735
+Tracker Antlion,7,71,4395,4395,4395
+Tracker Antlion,7,72,4478,4478,4478
+Tragopan,4,71,4395,4395,4395
+Tragopan,4,72,4478,4478,4478
+Tragopan,4,73,4562,4562,4562
+Tres Duendes,27,47,5190,5212,5201
+Tropical Rarab,4,73,4562,4562,4562
+Tropical Rarab,4,74,4645,4645,4645
+Tropical Rarab,4,75,4727,4729,4728
+Tropical Rarab,4,76,4814,4814,4814
 Tundra Tiger,111,34,1145,1145,1145
 Tundra Tiger,111,35,1223,1223,1223
 Tundra Tiger,111,36,1305,1305,1305
-Tundra Tiger,111,37,1383,1385,1384
+Tundra Tiger,111,37,1383,1383,1383
 Tunnel Worm,100,-1,24,24,24
+Tyrant,184,41,2683,2685,2684
 Uleguerand Tiger,5,61,3500,3501,3500.5
 Uleguerand Tiger,5,62,3582,3583,3582.5
 Uleguerand Tiger,5,63,3667,3667,3667
+Undead Bats,176,36,1305,1305,1305
+Undead Bats,176,39,1544,1544,1544
+Vampire Bat,9,46,2219,2219,2219
+Vampire Bat,9,47,2300,2302,2301
+Vampire Bat,9,48,2385,2385,2385
+Vampire Bat,9,49,2468,2469,2468.5
+Vampire Bat,9,50,2581,2581,2581
 Variable Hare,5,58,3249,3250,3249.5
 Variable Hare,5,59,3332,3337,3334.5
 Variable Hare,5,60,3416,3419,3417.5
 Variable Hare,5,61,3500,3501,3500.5
+Velociraptor,113,66,3917,3923,3920
+Velociraptor,113,67,4000,4001,4000.5
+Velociraptor,113,68,4084,4084,4084
+Velociraptor,113,69,4168,4168,4168
 Vorpal Bunny,193,23,520,521,520.5
 Vorpal Bunny,193,24,556,556,556
 Vorpal Bunny,193,25,589,589,589
@@ -707,13 +2084,19 @@ Wajaom Tiger,52,68,4084,4084,4084
 Walking Sapling,107,5,99,99,99
 Wandering Sapling,119,15,284,284,284
 Wandering Sapling,119,16,308,308,308
+War Lizard,149,29,765,765,765
+War Lizard,149,30,838,838,838
+War Lizard,149,31,902,902,902
+War Lizard,149,32,984,984,984
 War Smilodon,82,57,3165,3166,3165.5
 War Smilodon,82,58,3249,3249,3249
 War Smilodon,82,59,3333,3333,3333
+Wespe,159,53,2832,2835,2833.5
 White Lizard,124,36,1389,1389,1389
 White Lizard,124,37,1472,1472,1472
 White Lizard,124,38,1555,1555,1555
 White Lizard,124,39,1638,1638,1638
+Wight,105,28,692,693,692.5
 Wight,110,31,832,833,832.5
 Wild Dhalmel,117,14,261,261,261
 Wild Dhalmel,117,15,284,284,284
@@ -726,23 +2109,63 @@ Wild Sheep,100,5,99,99,99
 Wild Sheep,100,6,113,113,113
 Wild Sheep,100,7,128,128,128
 Wild Sheep,100,8,144,144,144
+Wolf Bat,149,25,589,590,589.5
+Wolf Bat,149,26,623,623,623
+Wolf Bat,149,27,658,658,658
+Wolf Bat,149,28,698,698,698
+Wood Bats,149,20,414,414,414
+Wood Bats,149,21,443,443,443
+Wood Bats,149,22,473,473,473
 Woodland Sage,124,61,7000,7001,7000.5
 Worker Crawler,124,43,1914,1915,1914.5
 Worker Crawler,124,44,1998,1999,1998.5
 Worker Crawler,124,45,2075,2076,2075.5
 Worker Crawler,124,46,2159,2159,2159
-Yagudo Abbot,151,55,2705,2719,2712
+Wyvern,213,72,4478,4478,4478
+Wyvern,213,73,4562,4562,4562
+Wyvern,213,74,4645,4646,4645.5
+Wyvern,213,75,4729,4729,4729
+Yagudo Abbot,151,55,2606,2609,2607.5
+Yagudo Abbot,151,56,2685,2685,2685
+Yagudo Abbot,151,57,2759,2759,2759
+Yagudo Abbot,151,58,2838,2838,2838
+Yagudo Abbot,151,59,2910,2913,2911.5
 Yagudo Acolyte,116,3,50,50,50
 Yagudo Acolyte,116,5,81,81,81
 Yagudo Acolyte,116,6,91,92,91.5
+Yagudo Acolyte,117,8,117,117,117
+Yagudo Assassin,151,64,3480,3480,3480
+Yagudo Assassin,151,65,3555,3555,3555
+Yagudo Assassin,151,66,3635,3635,3635
+Yagudo Assassin,151,67,3710,3710,3710
+Yagudo Assassin,151,68,3790,3790,3790
+Yagudo Chanter,151,53,2507,2507,2507
+Yagudo Chanter,151,54,2587,2587,2587
+Yagudo Chanter,151,55,2662,2662,2662
+Yagudo Chanter,151,56,2741,2741,2741
+Yagudo Chanter,151,57,2816,2816,2816
+Yagudo Conductor,151,63,3310,3310,3310
+Yagudo Conductor,151,64,3390,3390,3390
+Yagudo Conductor,151,65,3465,3465,3465
+Yagudo Conductor,151,66,3545,3545,3545
+Yagudo Conductor,151,67,3620,3620,3620
+Yagudo Conquistador,151,46,2028,2030,2029
 Yagudo Drummer,120,32,871,871,871
 Yagudo Drummer,120,33,945,946,945.5
-Yagudo Drummer,151,33,1041,962,1001.5
-Yagudo Drummer,151,34,1116,1117,1116.5
+Yagudo Drummer,151,33,962,962,962
+Yagudo Drummer,151,34,1042,1042,1042
+Yagudo Drummer,151,35,1116,1117,1116.5
+Yagudo Drummer,151,36,1196,1196,1196
+Yagudo Drummer,151,37,1270,1271,1270.5
+Yagudo Flagellant,151,62,3665,3665,3665
+Yagudo Flagellant,151,63,3744,3744,3744
+Yagudo Flagellant,151,64,3828,3828,3828
+Yagudo Flagellant,151,65,3947,3947,3947
+Yagudo Flagellant,151,66,4031,4031,4031
 Yagudo Herald,120,32,900,901,900.5
 Yagudo Herald,120,33,975,976,975.5
 Yagudo Herald,151,32,917,918,917.5
-Yagudo Herald,151,33,992,993,992.5
+Yagudo Herald,151,33,992,992,992
 Yagudo Herald,151,34,1072,1072,1072
 Yagudo Herald,151,35,1147,1147,1147
 Yagudo Herald,151,36,1226,1226,1226
@@ -751,9 +2174,14 @@ Yagudo Initiate,116,4,85,85,85
 Yagudo Initiate,116,5,106,106,106
 Yagudo Initiate,116,6,121,121,121
 Yagudo Initiate,117,8,154,155,154.5
+Yagudo Inquisitor,151,54,2720,2720,2720
+Yagudo Inquisitor,151,55,2798,2798,2798
+Yagudo Inquisitor,151,56,2880,2880,2880
+Yagudo Inquisitor,151,57,2958,2958,2958
+Yagudo Inquisitor,151,58,3041,3041,3041
 Yagudo Interrogator,120,32,954,954,954
 Yagudo Interrogator,120,33,1032,1033,1032.5
-Yagudo Interrogator,151,35,1193,1194,1193.5
+Yagudo Interrogator,151,35,1193,1193,1193
 Yagudo Interrogator,151,36,1275,1275,1275
 Yagudo Interrogator,151,38,1436,1436,1436
 Yagudo Interrogator,151,39,1513,1514,1513.5
@@ -761,17 +2189,35 @@ Yagudo Lutenist,151,43,1888,1889,1888.5
 Yagudo Lutenist,151,45,1889,1889,1889
 Yagudo Oracle,120,31,749,749,749
 Yagudo Oracle,151,34,939,939,939
+Yagudo Oracle,151,35,1011,1011,1011
 Yagudo Oracle,151,36,1159,1159,1159
+Yagudo Oracle,151,37,1159,1159,1159
+Yagudo Parasite,151,45,2076,2076,2076
+Yagudo Parasite,151,46,2159,2159,2159
+Yagudo Parasite,151,47,2242,2242,2242
+Yagudo Parasite,151,48,2325,2325,2325
+Yagudo Persecutor,117,13,239,239,239
+Yagudo Prelate,151,65,3334,3334,3334
+Yagudo Prelate,151,66,3412,3412,3412
+Yagudo Prelate,151,67,3485,3485,3485
+Yagudo Prelate,151,68,3563,3563,3563
+Yagudo Prelate,151,69,3636,3636,3636
 Yagudo Priest,119,23,435,442,438.5
 Yagudo Priest,120,27,617,617,617
 Yagudo Priest,120,28,619,621,620
 Yagudo Priest,151,24,508,509,508.5
+Yagudo Priest,151,26,574,574,574
+Yagudo Priest,151,27,606,606,606
 Yagudo Prior,151,45,1925,1972,1948.5
 Yagudo Prior,151,47,1943,1952,1947.5
 Yagudo Scribe,116,4,58,58,58
 Yagudo Scribe,116,5,74,74,74
 Yagudo Scribe,116,6,84,84,84
-Yagudo Sentinel,151,52,2791,2792,2791.5
+Yagudo Sentinel,151,52,2792,2792,2792
+Yagudo Sentinel,151,53,2871,2871,2871
+Yagudo Sentinel,151,54,2955,2955,2955
+Yagudo Sentinel,151,55,3094,3094,3094
+Yagudo Sentinel,151,56,3177,3177,3177
 Yagudo Theologist,119,22,387,388,387.5
 Yagudo Theologist,120,27,535,535,535
 Yagudo Theologist,120,28,569,570,569.5
@@ -794,6 +2240,8 @@ Yagudo Zealot,151,42,1846,2029,1937.5
 Yagudo Zealot,151,44,2133,2133,2133
 Yagudo Zealot,151,45,2272,2272,2272
 Yagudo's Elemental,151,27,208,208,208
+Yagudo's Elemental,151,28,220,220,220
+Yagudo's Elemental,151,29,232,232,232
 Yhoator Mandragora,124,35,1358,1358,1358
 Yhoator Mandragora,124,36,1442,1442,1442
 Yhoator Mandragora,124,37,1521,1521,1521
@@ -801,7 +2249,7 @@ Yhoator Wasp,124,37,1383,1383,1383
 Yhoator Wasp,124,38,1466,1466,1466
 Yhoator Wasp,124,39,1544,1544,1544
 Yhoator Wasp,124,40,1626,1626,1626
-Young Opo-opo,123,35,1305,1306,1305.5
+Young Opo-opo,123,35,1306,1306,1306
 Young Opo-opo,123,36,1389,1390,1389.5
 Young Opo-opo,124,40,1721,1721,1721
 Young Opo-opo,124,41,1804,1804,1804
@@ -815,7 +2263,12 @@ Yuhtunga Mandragora,123,32,1056,1056,1056
 Yuhtunga Mandragora,123,33,1135,1135,1135
 Zircon Quadav,110,31,711,712,711.5
 Zircon Quadav,110,32,776,777,776.5
+Zircon Quadav,147,34,877,878,877.5
+Zircon Quadav,147,35,943,943,943
+Zircon Quadav,147,37,1079,1079,1079
+Zircon Quadav,147,38,1149,1149,1149
 Zu,118,20,414,414,414
 Zu,118,21,443,443,443
 Zu,118,22,473,473,473
 Zu,118,23,504,504,504
+Zu,118,24,536,536,536
